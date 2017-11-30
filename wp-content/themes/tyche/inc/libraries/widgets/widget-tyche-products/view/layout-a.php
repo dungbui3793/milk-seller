@@ -6,47 +6,69 @@ wp_enqueue_style( 'owlCarousel-theme' );
 
 $posts = Tyche_Helper::get_products( $params ); ?>
 
-<div class="row tyche-product-slider-container">
+<div class="row zen-homepage-block-product">
     <?php
 
 
-    $quantityTermObject = get_term_by( 'name', $params['cats'], 'product_cat' );
-    $quantityTermName = $quantityTermObject->term_id;
-    echo $quantityTermName;
+    $cateObject = get_term_by( 'name', $params['cats'], 'product_cat' );
+    $cateId = $cateObject->term_id;
+    echo $cateId;
 
 
     $children = get_terms( 'product_cat', array(
-        'parent'    => $quantityTermName,
+        'parent'    => $cateId,
         'hide_empty' => false,
         'number' => 6
     ) );
 
 
     if($children) {
-        ?>
+      ?>
 
-    <div class="zen-custom-cate">
-        <div class="row">
-            <?php
-            foreach ($children as $eachChildCate) {
-                $cateID = $eachChildCate->term_id;
-                $thumbnail_id = get_woocommerce_term_meta( $cateID, 'thumbnail_id', true );
-                $image = wp_get_attachment_url( $thumbnail_id );
-                ?>
+        <div class="custom-category-block">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5">
+                    <?php
 
-                <div class="col-xs-6 col-sm-3">
-                    <a href="<?php echo get_term_link($cateID); ?>" class="item">
-                        <div class="img-hover">
-                            <img class="img-responsive" src="<?php echo $image; ?>" alt="">
-                        </div>
-                        <p><?php echo $eachChildCate->name; ?><b> (<?php echo $eachChildCate->count; ?>) </b></p>
+                    $thumbnail_id = get_woocommerce_term_meta( $cateId, 'thumbnail_id', true );
+                    $image = wp_get_attachment_url( $thumbnail_id );
+
+                    ?>
+                    <a href="<?php echo get_term_link($cateId); ?>" class="parent-cate">
+                        <img class="img-responsive" src="<?php echo $image; ?>" alt="">
                     </a>
                 </div>
-                <?php
-            }
-            ?>
+                <div class="col-xs-12 col-sm-7">
+
+                    <?php
+                    foreach ($children as $eachChildCate) {
+                        $cateID = $eachChildCate->term_id;
+                        $thumbnail_id = get_woocommerce_term_meta( $cateID, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                        ?>
+
+                        <div class="col-xs-6 col-sm-4">
+                            <a href="<?php echo get_term_link($cateID); ?>" class="item">
+                                <div class="img-hover">
+                                    <img class="img-responsive" src="<?php echo $image; ?>" alt="">
+                                </div>
+                                <p><?php echo $eachChildCate->name; ?></p>
+                            </a>
+                        </div>
+                        <?php
+                    }
+                    ?>
+
+                </div>
+
+            </div>
         </div>
-    </div>
+
+
+        <?php
+    }
+
+    ?>
 
 
 <!--	<div class="tyche-product-slider-navigation">-->
