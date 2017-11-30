@@ -1,0 +1,196 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.22
+* STEP-1 START @ 04:08:43
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	5.6.30 | SAPI: apache2handler
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache/2.4.25 (Unix) PHP/5.6.30
+DOC ROOT:	/Library/WebServer/Documents/milk-seller
+DOC ROOT 755:	false
+LOG FILE 644:	true
+REQUEST URL:	http://localhost/milk-seller/installer.php
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20170908_melrosehomefurnishing_ea0da787d57c04521689171124090820_archive.zip
+SIZE:	196MB
+ZIP:	Enabled (ZipArchive Support)
+
+>>> START EXTRACTION:
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 11657
+    [filename] => /Library/WebServer/Documents/milk-seller/20170908_melrosehomefurnishing_ea0da787d57c04521689171124090820_archive.zip
+    [comment] => 
+)
+File timestamp is 'Current' mode: 2017-11-30 16:08:51
+<<< EXTRACTION COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.171130160851.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 04:08:51 - RUNTIME: 7.6634 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 04:09:20
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.20 -- Build Server: 5.5.58
+FILE SIZE:	database.sql (2.44MB) - installer-data.sql (2.44MB)
+TIMEOUT:	5000
+MAXPACK:	4194304
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/Library/WebServer/Documents/milk-seller/installer-data.sql]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	33
+QUERIES RAN:	261
+
+wp_commentmeta: (2)
+wp_comments: (21)
+wp_duplicator_packages: (1)
+wp_links: (0)
+wp_options: (1304)
+wp_postmeta: (24288)
+wp_posts: (1629)
+wp_term_relationships: (1160)
+wp_term_taxonomy: (220)
+wp_termmeta: (523)
+wp_terms: (220)
+wp_usermeta: (125)
+wp_users: (3)
+wp_woocommerce_api_keys: (0)
+wp_woocommerce_attribute_taxonomies: (3)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_log: (0)
+wp_woocommerce_order_itemmeta: (101)
+wp_woocommerce_order_items: (11)
+wp_woocommerce_payment_tokenmeta: (0)
+wp_woocommerce_payment_tokens: (0)
+wp_woocommerce_sessions: (1)
+wp_woocommerce_shipping_zone_locations: (0)
+wp_woocommerce_shipping_zone_methods: (0)
+wp_woocommerce_shipping_zones: (0)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (1)
+wp_woof_query_cache: (0)
+
+Removed '1023' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 1.4710 sec.
+STEP-2 COMPLETE @ 04:09:22 - RUNTIME: 1.6354 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 04:09:43
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta~ (2)
+wp_comments~ (21)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (280)
+wp_postmeta~ (24288)
+wp_posts~ (1629)
+wp_term_relationships~ (1160)
+wp_term_taxonomy~ (220)
+wp_termmeta~ (523)
+wp_terms~ (220)
+wp_usermeta~ (125)
+wp_users~ (3)
+wp_woocommerce_api_keys^ (0)
+wp_woocommerce_attribute_taxonomies~ (3)
+wp_woocommerce_downloadable_product_permissions^ (0)
+wp_woocommerce_log^ (0)
+wp_woocommerce_order_itemmeta~ (101)
+wp_woocommerce_order_items~ (11)
+wp_woocommerce_payment_tokenmeta^ (0)
+wp_woocommerce_payment_tokens^ (0)
+wp_woocommerce_sessions~ (1)
+wp_woocommerce_shipping_zone_locations^ (0)
+wp_woocommerce_shipping_zone_methods^ (0)
+wp_woocommerce_shipping_zones^ (0)
+wp_woocommerce_tax_rate_locations^ (0)
+wp_woocommerce_tax_rates~ (1)
+wp_woof_query_cache^ (0)
+--------------------------------------
+Search1:	'/srv/users/serverpilot/apps/melrose/public' 
+Change1:	'/Library/WebServer/Documents/milk-seller' 
+Search2:	'\/srv\/users\/serverpilot\/apps\/melrose\/public' 
+Change2:	'\/Library\/WebServer\/Documents\/milk-seller' 
+Search3:	'%2Fsrv%2Fusers%2Fserverpilot%2Fapps%2Fmelrose%2Fpublic%2F' 
+Change3:	'%2FLibrary%2FWebServer%2FDocuments%2Fmilk-seller%2F' 
+Search4:	'\srv\users\serverpilot\apps\melrose\public' 
+Change4:	'/Library/WebServer/Documents/milk-seller' 
+Search5:	'http://melrose.gumiviet.com' 
+Change5:	'http://localhost/milk-seller' 
+Search6:	'http:\/\/melrose.gumiviet.com' 
+Change6:	'http:\/\/localhost\/milk-seller' 
+Search7:	'http%3A%2F%2Fmelrose.gumiviet.com' 
+Change7:	'http%3A%2F%2Flocalhost%2Fmilk-seller' 
+Search8:	'https://melrose.gumiviet.com' 
+Change8:	'https://localhost/milk-seller' 
+Search9:	'https:\/\/melrose.gumiviet.com' 
+Change9:	'https:\/\/localhost\/milk-seller' 
+Search10:	'https%3A%2F%2Fmelrose.gumiviet.com' 
+Change10:	'https%3A%2F%2Flocalhost%2Fmilk-seller' 
+Search11:	'//melrose.gumiviet.com' 
+Change11:	'//localhost/milk-seller' 
+Search12:	'\/\/melrose.gumiviet.com' 
+Change12:	'\/\/localhost\/milk-seller' 
+Search13:	'%2F%2Fmelrose.gumiviet.com' 
+Change13:	'%2F%2Flocalhost%2Fmilk-seller' 
+SCANNED:	Tables:28 	|	 Rows:28588 	|	 Cells:145064 
+UPDATED:	Tables:1 	|	 Rows:685 	|	 Cells:685 
+ERRORS:		0 
+RUNTIME:	0.881000 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+No Notices Found
+
+
+STEP 3 COMPLETE @ 04:09:44 - RUNTIME: 0.9138 sec.
+
+

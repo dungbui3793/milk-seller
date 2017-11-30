@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df1b35ee-7353-4d27-ac5c-0efa76f7ce08" name="Default" comment="" />
+    <ignored path="wp-content/uploads/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="layout-a.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="archive-product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/woocommerce/archive-product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="74" column="13" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="74" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>custom-filter-mobile</find>
+      <find>custom-sidebar</find>
+      <find>widget_text</find>
+      <find>.woocommerce .tyche-has-sidebar .woocommerce-result-count</find>
+      <find>tyche-product-image</find>
+      <find>custom-filter-mo</find>
+      <find>elements</find>
+      <find>owlCarousel</find>
+      <find>tyche-product-slider-container</find>
+      <find>.woocommerce ul.products li.product a h2.woocommerce-loop-product__title</find>
+      <find>.woocommerce ul.products li.product</find>
+      <find>.onsale</find>
+      <find>.suggestion-item</find>
+      <find>.tyche-product-image</find>
+      <find>.</find>
+      <find>.fle</find>
+      <find>.flexsl</find>
+      <find>.flexslid</find>
+      <find>.flexslider</find>
+      <find>do_action( 'woocommerce_product_thumbnails' );</find>
+      <find>flexslider</find>
+      <find>woocommerce-product-gallery__imag</find>
+      <find>woocommerce-product-gallery__wrapper</find>
+      <find>group-product-title</find>
+      <find>woocommerce-product-gallery</find>
+      <find>woocommerce-product-gallery__image</find>
+      <find>flex-control-thumbs</find>
+      <find>content</find>
+      <find>'content-area-1'</find>
+      <find>col-sm-3 hidden-xs</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/wp-content/themes/tyche/woocommerce</dir>
+      <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce/templates</dir>
+      <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product</dir>
+      <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce</dir>
+      <dir>$PROJECT_DIR$/wp-content/themes/tyche-child</dir>
+      <dir>$PROJECT_DIR$/wp-content/themes/tyche/inc</dir>
+      <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce-ajax-filters</dir>
+      <dir>$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss</dir>
+      <dir>$PROJECT_DIR$/wp-content/themes</dir>
+      <dir>$PROJECT_DIR$/wp-content/themes/tyche-child/assets</dir>
+      <dir>$PROJECT_DIR$/wp-content/plugins</dir>
+      <dir>$PROJECT_DIR$/wp-content/themes/tyche</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/sidebar-shop.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/template-parts/frontpage-widgets/content-area-1.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/template-parts/frontpage-widgets/content-area-2.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/layout/_footer.scss" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/front-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/template-parts/frontpage-widgets/content-area-1.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/front-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/archive.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/stock.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/short-description.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/gmv-js.js" />
+        <option value="$PROJECT_DIR$/wp-includes/js/jquery/jquery.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/product-attributes.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/price.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/woocommerce/single-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variable.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/progress.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/meta.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-single-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/helpers/_mixins.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/woocommerce/archive-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/helpers/_variables.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/style.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view/layout-a.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view/layout-c.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view/layout-b.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-b.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-c.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-ajax-filters/js/widget.min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/woocommerce/archive-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/layout/_sidebar.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/assets/js/functions.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/layout/_main.scss" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/single-product.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/product-thumbnails.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/js/gmv-js.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/product-image.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-d.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="977" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontpage-widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontpage-widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="woocommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-c.php&#10;meta&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce/templates/single-product/meta.php&#10;.zip&#9;null&#9;null&#10;archive-product.php&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/themes/tyche/woocommerce/archive-product.php&#10;progre&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce-products-filter/js/progress.css&#10;compass.s&#9;ACTION&#9;null&#10;progress.scss&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/progress.scss&#10;meta.&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce/templates/single-product/meta.php&#10;html-product-data-variations.php&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-variations.php&#10;variation-add-to-cart-button.php&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/themes/tyche/woocommerce/single-product/add-to-cart/variation-add-to-cart-button.php&#10;variable.php&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variable.php&#10;add-to-car&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php&#10;varia&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variable.php&#10;html-product-attribute.php&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-attribute.php&#10;layout&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php&#10;wc_get_product&#9;null&#9;null&#10;categor&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-includes/category.php&#10;class-tyche-autoloader&#9;FILE&#9;file:///Library/WebServer/Documents/melrose/wp-content/themes/tyche/inc/class-tyche-autoloader.php" />
+    <property name="add_unversioned_files" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/plugins" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/js" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/tyche-child" />
+      <recent name="$PROJECT_DIR$/wp-content/uploads/2017/08" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df1b35ee-7353-4d27-ac5c-0efa76f7ce08" name="Default" comment="" />
+      <created>1503303515140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503303515140</updated>
+      <workItem from="1503303516482" duration="2735000" />
+      <workItem from="1503366342545" duration="984000" />
+      <workItem from="1503892621159" duration="3186000" />
+      <workItem from="1504070276232" duration="935000" />
+      <workItem from="1504602574779" duration="844000" />
+      <workItem from="1504684867430" duration="2086000" />
+      <workItem from="1504748038786" duration="1658000" />
+      <workItem from="1505278476511" duration="1055000" />
+      <workItem from="1505352859427" duration="597000" />
+      <workItem from="1506390602637" duration="1425000" />
+      <workItem from="1507512858592" duration="16464000" />
+      <workItem from="1507619677799" duration="1182000" />
+      <workItem from="1507623287282" duration="5043000" />
+      <workItem from="1507685531512" duration="15421000" />
+      <workItem from="1507771642698" duration="26957000" />
+      <workItem from="1507811917956" duration="1852000" />
+      <workItem from="1508115899419" duration="3328000" />
+      <workItem from="1508206286575" duration="15878000" />
+      <workItem from="1508289195190" duration="5733000" />
+      <workItem from="1508298934099" duration="13166000" />
+      <workItem from="1508376287011" duration="12186000" />
+      <workItem from="1508492913960" duration="1101000" />
+      <workItem from="1508719588208" duration="3366000" />
+      <workItem from="1508904184642" duration="523000" />
+      <workItem from="1512058878118" duration="2093000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="140049000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="830" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27896994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.49574015" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/wp-content/plugins/woocommerce-ajax-filters/js/widget.min.js</url>
+          <line>830</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/wp-content/plugins/woocommerce-ajax-filters/js/widget.min.js</url>
+          <line>167</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/woocommerce/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="39" column="74" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/woocommerce-products-filter/js/chosen/chosen.css" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/_compass.scss" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/_animation.scss" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.css" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/progress.css" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/progress.scss" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-ajax-filters/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/duplicator/classes/package/class.pack.archive.zip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/meta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/woocommerce/archive-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/style_bk.css" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/front-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/inc/helpers/class-tyche-helper.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view/layout-d.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view/layout-c.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view/layout-b.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/class-widget-tyche-products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/inc/libraries/widgets/widget-tyche-products/view/layout-a.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-b.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-ajax-filters/js/widget.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="844" column="72" lean-forward="false" selection-start-line="844" selection-start-column="72" selection-end-line="844" selection-end-column="72" />
+          <folding>
+            <element signature="e#916#1146#0" expanded="false" />
+            <element signature="e#1279#1491#0" expanded="false" />
+            <element signature="e#1594#1662#0" expanded="false" />
+            <element signature="e#1702#2138#0" expanded="false" />
+            <element signature="e#2180#4711#0" expanded="false" />
+            <element signature="e#4755#8055#0" expanded="false" />
+            <element signature="e#8099#18021#0" expanded="false" />
+            <element signature="e#18067#27953#0" expanded="false" />
+            <element signature="e#28021#35199#0" expanded="false" />
+            <element signature="e#35236#36226#0" expanded="false" />
+            <element signature="e#36280#36600#0" expanded="false" />
+            <element signature="e#36677#39881#0" expanded="false" />
+            <element signature="e#36947#37403#0" expanded="false" />
+            <element signature="e#37573#37730#0" expanded="false" />
+            <element signature="e#37788#38008#0" expanded="false" />
+            <element signature="e#38079#38198#0" expanded="false" />
+            <element signature="e#41361#41536#0" expanded="false" />
+            <element signature="e#42578#43718#0" expanded="false" />
+            <element signature="e#43862#44185#0" expanded="false" />
+            <element signature="e#44304#44385#0" expanded="false" />
+            <element signature="e#44531#44812#0" expanded="false" />
+            <element signature="e#44910#45465#0" expanded="false" />
+            <element signature="e#45512#45648#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/js/functions.js" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3231" lean-forward="false" selection-start-line="0" selection-start-column="3231" selection-end-line="0" selection-end-column="3231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/single-product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="134" column="104" lean-forward="true" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/assets/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="200" column="14" lean-forward="false" selection-start-line="200" selection-start-column="14" selection-end-line="200" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/js/gmv-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512058127000" expanded="true" signature="60:4574" ph="{...}" />
+            <marker date="1512058127000" expanded="true" signature="3460:3898" ph="{...}" />
+            <marker date="1512058127000" expanded="true" signature="3769:3892" ph="{...}" />
+            <marker date="1512058127000" expanded="true" signature="3843:3867" ph="{...}" />
+            <marker date="1512058127000" expanded="true" signature="4129:4212" ph="{...}" />
+            <marker date="1512058127000" expanded="true" signature="4272:4356" ph="{...}" />
+            <marker date="1512058127000" expanded="true" signature="4370:4461" ph="{...}" />
+            <marker date="1512058127000" expanded="true" signature="4514:4568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/layout/_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/product-image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/product-thumbnails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="39" column="76" lean-forward="false" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/addthis/test/feeds-integration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="3" lean-forward="false" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/layout/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3720">
+          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/helpers/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="25" lean-forward="false" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/helpers/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="52" column="53" lean-forward="false" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="307" column="0" lean-forward="true" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="90" column="29" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/class-tyche-sidebars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/customizer/theme-options/options.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="282" column="8" lean-forward="false" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
+          <folding>
+            <marker date="1512058126000" expanded="true" signature="662:676" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/template-parts/frontpage-widgets/content-area-1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/template-parts/frontpage-widgets/content-area-1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/helpers/class-tyche-helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-d.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/woocommerce/archive-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="74" column="13" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="74" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+.wcc-admin-notice {
+  border-left-color: #bb77ae !important;
+  background: url("../images/tos-notice-bg.png") no-repeat bottom right white;
+  background-size: contain;
+  position: relative; }
+  .wcc-admin-notice a {
+    color: #bb77ae; }
+    .wcc-admin-notice a:hover {
+      color: #a36597; }
+  .wcc-admin-notice .button-primary {
+    background: #bb77ae;
+    border-color: #a36597;
+    box-shadow: 0 1px 0 #a36597;
+    text-shadow: none;
+    color: white; }
+    .wcc-admin-notice .button-primary:hover {
+      background: #96588a;
+      border-color: #a36597; }

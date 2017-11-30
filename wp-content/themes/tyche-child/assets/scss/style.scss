@@ -1,0 +1,20 @@
+/*
+Theme Name: Tyche Child Theme
+Theme URI:
+Description: Day la child theme cua Tyche
+Author: Dung Bui
+Author URI:
+Template: tyche
+Version: 0.1
+*/
+
+
+@import url("../tyche/assets/css/style.css");
+
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "layout/sidebar";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "custom";
