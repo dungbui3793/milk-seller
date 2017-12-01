@@ -12,7 +12,7 @@ $posts = Tyche_Helper::get_products( $params ); ?>
 
     $cateObject = get_term_by( 'name', $params['cats'], 'product_cat' );
     $cateId = $cateObject->term_id;
-    echo $cateId;
+//    echo $cateId;
 
 
     $children = get_terms( 'product_cat', array(
@@ -26,7 +26,7 @@ $posts = Tyche_Helper::get_products( $params ); ?>
       ?>
 
         <div class="custom-category-block">
-            <div class="row">
+            <div class="clearfix">
                 <div class="col-xs-12 col-sm-5">
                     <?php
 
@@ -39,25 +39,27 @@ $posts = Tyche_Helper::get_products( $params ); ?>
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-7">
+                    <div class="row top-cate-wrap">
 
-                    <?php
-                    foreach ($children as $eachChildCate) {
-                        $cateID = $eachChildCate->term_id;
-                        $thumbnail_id = get_woocommerce_term_meta( $cateID, 'thumbnail_id', true );
-                        $image = wp_get_attachment_url( $thumbnail_id );
-                        ?>
-
-                        <div class="col-xs-6 col-sm-4">
-                            <a href="<?php echo get_term_link($cateID); ?>" class="item">
-                                <div class="img-hover">
-                                    <img class="img-responsive" src="<?php echo $image; ?>" alt="">
-                                </div>
-                                <p><?php echo $eachChildCate->name; ?></p>
-                            </a>
-                        </div>
                         <?php
-                    }
-                    ?>
+                        foreach ($children as $eachChildCate) {
+                            $cateID = $eachChildCate->term_id;
+                            $thumbnail_id = get_woocommerce_term_meta( $cateID, 'thumbnail_id', true );
+                            $image = wp_get_attachment_url( $thumbnail_id );
+                            ?>
+
+                            <div class="col-xs-6 col-sm-4 top-cate">
+                                <a href="<?php echo get_term_link($cateID); ?>" class="item">
+                                    <div class="img-hover">
+                                        <img class="img-responsive" src="<?php echo $image; ?>" alt="">
+                                    </div>
+                                    <p><?php echo $eachChildCate->name; ?></p>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                    </div>
 
                 </div>
 

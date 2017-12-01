@@ -1507,12 +1507,6 @@ body, html {
 .text-center {
   text-align: center; }
 
-.content-area-1 .tyche-products {
-  border: 1px solid #e1e1e1;
-  padding: 0 15px 15px; }
-  .content-area-1 .tyche-products .widget-title {
-    margin-top: 10px; }
-
 .woocommerce ul.products li.product a img {
   height: 155px;
   width: inherit;
@@ -1577,32 +1571,52 @@ body, html {
 .no-products {
   line-height: 1.2; }
 
-.home .site-content {
-  background-color: #F7F7F9; }
-
-.single-product .quantity .styled-number {
+.custom-category-block .clearfix {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
-  .single-product .quantity .styled-number .incrementor {
-    border: 1px solid #ccc;
-    border-radius: 0;
-    /* height: 100%; */
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    padding-right: 3px;
-    padding-top: 1px; }
-    .single-product .quantity .styled-number .incrementor.arrow-down {
-      border-right: none;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px; }
-    .single-product .quantity .styled-number .incrementor.arrow-up {
-      border-left: none;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px; }
-  .single-product .quantity .styled-number input[type="number"] {
-    border: 1px solid #ccc;
-    border-radius: 0;
-    width: 30px; }
+  @media only screen and (max-width: 640px) {
+    .custom-category-block .clearfix {
+      flex-direction: column; } }
+.custom-category-block .top-cate-wrap {
+  height: 100%;
+  margin-top: -2%; }
+.custom-category-block .top-cate {
+  height: 47%;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  .custom-category-block .top-cate a.item {
+    height: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc; }
+    .custom-category-block .top-cate a.item:hover .img-hover img {
+      -webkit-transform: scale(1.2);
+      -khtml-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+    .custom-category-block .top-cate a.item .img-hover img {
+      -webkit-transition: 0.5s;
+      -khtml-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .custom-category-block .top-cate a.item p {
+      position: absolute;
+      margin-bottom: 0;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      font-size: 0.875rem;
+      background-color: rgba(255, 255, 255, 0.8); }

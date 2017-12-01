@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df1b35ee-7353-4d27-ac5c-0efa76f7ce08" name="Default" comment="" />
+    <list default="true" id="df1b35ee-7353-4d27-ac5c-0efa76f7ce08" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss" afterPath="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tyche-child/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/tyche-child/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php" afterPath="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php" />
+    </list>
     <ignored path="wp-content/uploads/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,13 +16,50 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="layout-a.php" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="layout-a.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="46" column="14" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
+            <state relative-caret-position="329">
+              <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="49" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_custom.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="191" column="3" lean-forward="false" selection-start-line="191" selection-start-column="3" selection-end-line="191" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="53" column="24" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="53" selection-end-column="24" />
+              <folding>
+                <element signature="e#2649#6711#0#PHP" expanded="false" />
+                <element signature="e#6713#7034#0#PHP" expanded="false" />
+                <element signature="e#7036#8706#0#PHP" expanded="false" />
+                <element signature="e#8708#12804#0#PHP" expanded="false" />
+                <element signature="e#8889#12802#0#PHP" expanded="false" />
+                <element signature="e#12806#15351#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -25,8 +67,8 @@
       <file leaf-file-name="archive-product.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/woocommerce/archive-product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="74" column="13" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="74" selection-end-column="13" />
+            <state relative-caret-position="414">
+              <caret line="72" column="14" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="72" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -44,8 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>custom-filter-mobile</find>
-      <find>custom-sidebar</find>
       <find>widget_text</find>
       <find>.woocommerce .tyche-has-sidebar .woocommerce-result-count</find>
       <find>tyche-product-image</find>
@@ -74,6 +114,8 @@
       <find>content</find>
       <find>'content-area-1'</find>
       <find>col-sm-3 hidden-xs</find>
+      <find>.content-area-1</find>
+      <find>col-xs-6 col-sm-4</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -83,7 +125,6 @@
       <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce/templates</dir>
       <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product</dir>
       <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce</dir>
-      <dir>$PROJECT_DIR$/wp-content/themes/tyche-child</dir>
       <dir>$PROJECT_DIR$/wp-content/themes/tyche/inc</dir>
       <dir>$PROJECT_DIR$/wp-content/plugins/woocommerce-ajax-filters</dir>
       <dir>$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss</dir>
@@ -91,6 +132,7 @@
       <dir>$PROJECT_DIR$/wp-content/themes/tyche-child/assets</dir>
       <dir>$PROJECT_DIR$/wp-content/plugins</dir>
       <dir>$PROJECT_DIR$/wp-content/themes/tyche</dir>
+      <dir>$PROJECT_DIR$/wp-content/themes/tyche-child</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -122,7 +164,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/tyche/woocommerce/single-product.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variable.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/progress.scss" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/meta.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/content-single-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/helpers/_mixins.scss" />
@@ -144,10 +185,11 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/js/gmv-js.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/product-image.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-d.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -158,12 +200,30 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="977" />
+    <option name="width" value="1440" />
+    <option name="height" value="830" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -179,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -188,115 +247,15 @@
               <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
               <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontpage-widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontpage-widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="milk-seller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milk-seller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tyche-child" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="woocommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="Console" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
@@ -432,12 +391,13 @@
       <workItem from="1508492913960" duration="1101000" />
       <workItem from="1508719588208" duration="3366000" />
       <workItem from="1508904184642" duration="523000" />
-      <workItem from="1512058878118" duration="2093000" />
+      <workItem from="1512058878118" duration="3360000" />
+      <workItem from="1512149080378" duration="2606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140049000" />
+    <option name="totallyTimeSpent" value="143922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,17 +412,17 @@
     <frame x="0" y="23" width="1440" height="830" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27896994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2825465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.49574015" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292517" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -496,13 +456,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/woocommerce/single-product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -639,13 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/js/functions.js" />
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -672,16 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512058127000" expanded="true" signature="60:4574" ph="{...}" />
-            <marker date="1512058127000" expanded="true" signature="3460:3898" ph="{...}" />
-            <marker date="1512058127000" expanded="true" signature="3769:3892" ph="{...}" />
-            <marker date="1512058127000" expanded="true" signature="3843:3867" ph="{...}" />
-            <marker date="1512058127000" expanded="true" signature="4129:4212" ph="{...}" />
-            <marker date="1512058127000" expanded="true" signature="4272:4356" ph="{...}" />
-            <marker date="1512058127000" expanded="true" signature="4370:4461" ph="{...}" />
-            <marker date="1512058127000" expanded="true" signature="4514:4568" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,13 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="39" column="76" lean-forward="false" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -741,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="307" column="0" lean-forward="true" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -759,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,9 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="282" column="8" lean-forward="false" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
-          <folding>
-            <marker date="1512058126000" expanded="true" signature="662:676" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,22 +719,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="e#2649#6711#0#PHP" expanded="false" />
+            <element signature="e#6713#7034#0#PHP" expanded="false" />
+            <element signature="e#7036#8706#0#PHP" expanded="false" />
+            <element signature="e#8708#12804#0#PHP" expanded="false" />
+            <element signature="e#8889#12802#0#PHP" expanded="false" />
+            <element signature="e#12806#15351#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/woocommerce/archive-product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="74" column="13" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="74" selection-end-column="13" />
+        <state relative-caret-position="414">
+          <caret line="72" column="14" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="72" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche/inc/libraries/widgets/widget-tyche-products/view/layout-a.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="46" column="14" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="329">
+          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/tyche-child/assets/scss/_custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="191" column="3" lean-forward="false" selection-start-line="191" selection-start-column="3" selection-end-line="191" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitinore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
