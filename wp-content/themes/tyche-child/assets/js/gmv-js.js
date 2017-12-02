@@ -155,6 +155,24 @@ $(function () {
         $(".custom-sidebar").slideToggle(300);
     });
 
-
+    $('.block-slide-product').owlCarousel({
+        loop:true,
+        nav:true,
+        margin: 20,
+        touchDrag: true,
+        mouseDrag: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        responsive:{
+            0:{
+                items:2
+            },
+            1200:{
+                items:5
+            }
+        }
+    });
 });
 

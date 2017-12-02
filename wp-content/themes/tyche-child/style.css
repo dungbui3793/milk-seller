@@ -1571,52 +1571,84 @@ body, html {
 .no-products {
   line-height: 1.2; }
 
-.custom-category-block .clearfix {
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-  @media only screen and (max-width: 640px) {
-    .custom-category-block .clearfix {
-      flex-direction: column; } }
-.custom-category-block .top-cate-wrap {
-  height: 100%;
-  margin-top: -2%; }
-.custom-category-block .top-cate {
-  height: 47%;
-  margin-top: 2%;
-  margin-bottom: 2%; }
-  .custom-category-block .top-cate a.item {
-    height: 100%;
+.zen-homepage-block-product .custom-category-block {
+  margin-bottom: 40px; }
+  .zen-homepage-block-product .custom-category-block .clearfix {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ccc; }
-    .custom-category-block .top-cate a.item:hover .img-hover img {
-      -webkit-transform: scale(1.2);
-      -khtml-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2); }
-    .custom-category-block .top-cate a.item .img-hover img {
-      -webkit-transition: 0.5s;
-      -khtml-transition: 0.5s;
-      -moz-transition: 0.5s;
-      -ms-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
-    .custom-category-block .top-cate a.item p {
-      position: absolute;
-      margin-bottom: 0;
-      bottom: 0;
-      left: 0;
-      text-align: center;
-      width: 100%;
-      font-size: 0.875rem;
-      background-color: rgba(255, 255, 255, 0.8); }
+    display: flex; }
+    @media only screen and (max-width: 640px) {
+      .zen-homepage-block-product .custom-category-block .clearfix {
+        flex-direction: column; } }
+  .zen-homepage-block-product .custom-category-block .top-cate-wrap {
+    height: 100%;
+    margin-top: -2%; }
+  .zen-homepage-block-product .custom-category-block .top-cate {
+    height: 47%;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+    .zen-homepage-block-product .custom-category-block .top-cate a.item {
+      height: 100%;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #ccc; }
+      .zen-homepage-block-product .custom-category-block .top-cate a.item:hover .img-hover img {
+        -webkit-transform: scale(1.2);
+        -khtml-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); }
+      .zen-homepage-block-product .custom-category-block .top-cate a.item .img-hover img {
+        -webkit-transition: 0.5s;
+        -khtml-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+      .zen-homepage-block-product .custom-category-block .top-cate a.item p {
+        position: absolute;
+        margin-bottom: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 0.875rem;
+        background-color: rgba(255, 255, 255, 0.8); }
+.zen-homepage-block-product .block-slide-product-wrap > h3 {
+  font-size: 1.675rem;
+  margin-bottom: 10px;
+  margin-top: 0; }
+.zen-homepage-block-product .block-slide-product-wrap .tyche-product-body h3 {
+  font-size: 1rem; }
+.zen-homepage-block-product .block-slide-product-wrap .tyche-product-body .price {
+  font-size: 1rem; }
+.zen-homepage-block-product .block-slide-product .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+  .zen-homepage-block-product .block-slide-product .owl-nav .owl-prev, .zen-homepage-block-product .block-slide-product .owl-nav .owl-next {
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    background-color: #eee;
+    color: #555;
+    opacity: .8;
+    border-radius: 100%;
+    font-size: 1.7rem;
+    text-align: center; }
+    .zen-homepage-block-product .block-slide-product .owl-nav .owl-prev:hover, .zen-homepage-block-product .block-slide-product .owl-nav .owl-next:hover {
+      background: #555;
+      color: #fff; }
+  .zen-homepage-block-product .block-slide-product .owl-nav .owl-prev {
+    float: left; }
+  .zen-homepage-block-product .block-slide-product .owl-nav .owl-next {
+    float: right; }
