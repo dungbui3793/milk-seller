@@ -67,16 +67,8 @@ if( ! function_exists( 'gmv_hot_item_top')) {
         ?>
         <div class="container">
             <div class="suggestion-item">
-                <h3 class="widget-title"><span>Suggestion Item</span></h3>
+                <h3 class="widget-title"><span>Sản phẩm được yêu thích</span></h3>
                 <div class="clearfix">
-                    <div class="custom-owl-nav">
-                        <div class="owl-prev">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </div>
-                        <div class="owl-next">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
                     <?php
                     $meta_query  = WC()->query->get_meta_query();
                     $tax_query   = WC()->query->get_tax_query();
@@ -98,58 +90,47 @@ if( ! function_exists( 'gmv_hot_item_top')) {
                     );
 
                     $loop = new WP_Query( $args );
-                    $i = 0;
-                    echo '<div class="owl-carousel suggestion-slide">';
-                    $countPost = $loop->post_count;
-//                    echo $countPost;
+                    ?>
 
-                    while ( $loop->have_posts() ) : $loop->the_post(); global $product;
+                    <div class="owl-carousel suggestion-slide">
+                        <?php
 
-                        ?>
+                        while ( $loop->have_posts() ) : $loop->the_post(); global $product;
 
-                        <div class="item">
-                            <div class="">
-                                <div class="tyche-product primary">
-                                    <div class="tyche-product-image">
-                                        <?php if ( $product->is_on_sale() ) : ?>
+                            ?>
 
-                                            <span class="onsale">Sale!</span>
+                            <div class="item">
+                                <div class="">
+                                    <div class="tyche-product primary">
+                                        <div class="tyche-product-image">
+                                            <?php if ( $product->is_on_sale() ) : ?>
 
-                                        <?php endif; ?>
-                                        <?php
+                                                <span class="onsale">Sale!</span>
 
-                                        if ( has_post_thumbnail( $loop->post->ID ) )
-                                            echo get_the_post_thumbnail( $loop->post->ID, 'shop_catalog' );
-                                        else
-                                            echo '<img src="' . wc_placeholder_img_src() . '" alt="Placeholder" width="65px" height="115px" />';
-                                        ?>
-                                    </div>
-                                    <div class="tyche-product-body">
-                                        <h3><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a> </h3>
-                                        <span class="price"><?php  echo $product->get_price_html(); ?></span>
-                                        <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+                                            <?php endif; ?>
+                                            <?php
+
+                                            if ( has_post_thumbnail( $loop->post->ID ) )
+                                                echo get_the_post_thumbnail( $loop->post->ID, 'shop_catalog' );
+                                            else
+                                                echo '<img src="' . wc_placeholder_img_src() . '" alt="Placeholder" width="65px" height="115px" />';
+                                            ?>
+                                        </div>
+                                        <div class="tyche-product-body">
+                                            <h3><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a> </h3>
+                                            <span class="price"><?php  echo $product->get_price_html(); ?></span>
+                                            <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <?php
 
-                        if($i == (ceil($countPost/2) - 1) && $i != ($countPost-1)) {
-                            echo "</div><div class='owl-carousel suggestion-slide'>";
-                        } else if ($i == ($countPost - 1)) {
-                            echo '</div>'; // -- close owl carousel if last item of array
-                        }
+                            <?php
+                        endwhile;
+                        wp_reset_query();
                         ?>
-
-
-                        <?php
-                        $i++;
-                    endwhile;
-                    wp_reset_query();
-
-
-                    ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -385,13 +366,13 @@ if( ! function_exists( 'custom_woocommerce_simple_add_to_cart' )) {
 
 /* === hide dimension == */
 
-add_filter( 'wc_product_enable_dimensions_display', '__return_false' );
-
-add_filter( 'woocommerce_product_tabs', 'bbloomer_remove_product_tabs', 98 );
-
-function bbloomer_remove_product_tabs( $tabs ) {
-    unset( $tabs['additional_information'] );
-    return $tabs;
-}
+//add_filter( 'wc_product_enable_dimensions_display', '__return_false' );
+//
+//add_filter( 'woocommerce_product_tabs', 'bbloomer_remove_product_tabs', 98 );
+//
+//function bbloomer_remove_product_tabs( $tabs ) {
+//    unset( $tabs['additional_information'] );
+//    return $tabs;
+//}
 
 /* ======= */

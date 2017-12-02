@@ -132,24 +132,24 @@ $(function () {
                 items:2
             },
             1200:{
-                items:4
+                items:5
             }
         }
     });
 
-    $(".suggestion-item .custom-owl-nav .owl-next").click(function () {
-        $(".suggestion-item .suggestion-slide .owl-nav .owl-next").click();
-    });
-
-    $(".suggestion-item .custom-owl-nav .owl-prev").click(function () {
-        $(".suggestion-item .suggestion-slide .owl-nav .owl-prev").click();
-    });
-
-    $(".suggestion-item > .clearfix").hover(function () {
-        $('.suggestion-item .suggestion-slide').trigger('stop.owl.autoplay')
-    }, function () {
-        $('.suggestion-item .suggestion-slide').trigger('play.owl.autoplay',[1000])
-    });
+    // $(".suggestion-item .custom-owl-nav .owl-next").click(function () {
+    //     $(".suggestion-item .suggestion-slide .owl-nav .owl-next").click();
+    // });
+    //
+    // $(".suggestion-item .custom-owl-nav .owl-prev").click(function () {
+    //     $(".suggestion-item .suggestion-slide .owl-nav .owl-prev").click();
+    // });
+    //
+    // $(".suggestion-item > .clearfix").hover(function () {
+    //     $('.suggestion-item .suggestion-slide').trigger('stop.owl.autoplay')
+    // }, function () {
+    //     $('.suggestion-item .suggestion-slide').trigger('play.owl.autoplay',[1000])
+    // });
 
     $(".custom-filter-mobile").click(function () {
         $(".custom-sidebar").slideToggle(300);

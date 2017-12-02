@@ -22,7 +22,7 @@ get_header();
 <div class="content-area-1">
     <?php
 
-    gmv_categories_top();
+//    gmv_categories_top();
 
     gmv_hot_item_top();
 

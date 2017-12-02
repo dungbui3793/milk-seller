@@ -11,6 +11,13 @@ Version: 0.1
 
 @import url("../tyche/assets/css/style.css");
 
+// add font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=vietnamese');
+
+//body *, html *{
+//  font-family: 'Open Sans', sans-serif !important;
+//}
+
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "layout/sidebar";

@@ -232,7 +232,7 @@
 
   .block-slide-product-wrap {
     > h3 {
-      font-size: 1.675rem;
+      font-size: 1.25rem;
       margin-bottom: 10px;
       margin-top: 0;
     }
@@ -248,8 +248,7 @@
   .block-slide-product {
     .owl-nav {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 20%;
       width: 100%;
       .owl-prev, .owl-next {
         width: 33px;
@@ -277,3 +276,22 @@
 
 }
 
+.woocommerce div.product .woocommerce-tabs {
+  margin-bottom: 50px;
+}
+
+.woocommerce div.product .woocommerce-tabs .wc-tab {
+  padding-top: 20px;
+
+  h2 {
+    display: none;
+  }
+}
+
+.tyche-product .tyche-product-image img {
+  width: 60%;
+}
+
+.tyche-product .tyche-product-image span.onsale {
+  z-index: 1;
+}
