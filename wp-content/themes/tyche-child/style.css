@@ -1662,3 +1662,16 @@ body, html {
 
 .tyche-product .tyche-product-image span.onsale {
   z-index: 1; }
+
+@media (min-width: 768px) {
+  .search-page.woocommerce .tyche-has-sidebar ul.products li.product {
+    width: 23.5%;
+    margin: 0 2% 2.992em 0; }
+  .search-page.woocommerce .tyche-has-sidebar ul.products li.first {
+    clear: initial; }
+  .search-page.woocommerce .tyche-has-sidebar ul.products li.last {
+    margin-right: 2%; }
+  .search-page.woocommerce .tyche-has-sidebar ul.products li:nth-child(4n) {
+    margin-right: 0; }
+  .search-page.woocommerce .tyche-has-sidebar ul.products li:nth-child(4n + 1) {
+    clear: both; } }
