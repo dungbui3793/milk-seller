@@ -100,7 +100,7 @@ if( ! function_exists( 'gmv_hot_item_top')) {
                             ?>
 
                             <div class="item">
-                                <div class="">
+                                <a  href="<?php echo get_the_permalink(); ?>" class="">
                                     <div class="tyche-product primary">
                                         <div class="tyche-product-image">
                                             <?php if ( $product->is_on_sale() ) : ?>
@@ -122,7 +122,7 @@ if( ! function_exists( 'gmv_hot_item_top')) {
                                             <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
 

@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=vietnamese');
+
 body, html {
   font-size: 14px;
+  *:not(.fa, .dashicons) {
+    font-family: "Roboto", Arial,Helvetica,sans-serif !important;
+  }
   @media #{$info-tablet} {
     font-size: 13px;
   }

@@ -18,6 +18,7 @@ Version: 0.1
   note: All CSS3 Properties are being supported by Safari 5
   more info: http://www.findmebyip.com/litmus/#css3-properties
 ------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=vietnamese");
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
@@ -1196,6 +1197,8 @@ Version: 0.1
 
 body, html {
   font-size: 14px; }
+  body *:not(.fa, .dashicons), html *:not(.fa, .dashicons) {
+    font-family: "Roboto", Arial,Helvetica,sans-serif !important; }
   @media only screen and (max-width: 800px) {
     body, html {
       font-size: 13px; } }
@@ -1713,7 +1716,8 @@ body, html {
 .content-area-5 h4 span:before,
 .content-area-5 h5 span:before,
 .content-area-5 h6 span:before {
-  width: 100%; }
+  width: calc(100% + 10px);
+  bottom: -5px; }
 
 .woocommerce .woocommerce-info {
   width: 100%; }
@@ -1725,3 +1729,30 @@ body, html {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
+
+.woocommerce div.product div.images img {
+  max-width: 60%;
+  margin: auto; }
+
+.pswp--animated-in .pswp__bg, .pswp--animated-in .pswp__zoom-wrap {
+  opacity: .8 !important; }
+
+.item .tyche-product .tyche-product-image {
+  overflow: hidden; }
+  .item .tyche-product .tyche-product-image img {
+    -webkit-transition: 0.3s;
+    -khtml-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .item .tyche-product .tyche-product-image:hover img {
+    -webkit-transform: scale(1.1);
+    -khtml-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.dashicons, .dashicons-before:before {
+  font-family: dashicons !important; }

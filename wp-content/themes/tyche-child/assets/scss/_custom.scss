@@ -368,7 +368,8 @@
 .content-area-5 h4 span:before,
 .content-area-5 h5 span:before,
 .content-area-5 h6 span:before {
-  width: 100%;
+  width: calc(100% + 10px);
+  bottom: -5px;
 }
 
 .woocommerce .woocommerce-info {
@@ -377,4 +378,29 @@
     top: 50%;
     @include css3-prefix(transform, translateY(-50%));
   }
+}
+
+.woocommerce div.product div.images img {
+  max-width: 60%;
+  margin: auto;
+}
+
+.pswp--animated-in .pswp__bg, .pswp--animated-in .pswp__zoom-wrap {
+  opacity: .8 !important;
+}
+
+.item .tyche-product .tyche-product-image {
+  overflow: hidden;
+  img {
+    @include css3-prefix(transition, .3s)
+  }
+  &:hover {
+    img {
+      @include css3-prefix(transform, scale(1.1));
+    }
+  }
+}
+
+.dashicons, .dashicons-before:before {
+  font-family: dashicons !important;
 }
