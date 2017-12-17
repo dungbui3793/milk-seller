@@ -28,7 +28,6 @@ get_header();
 
     ?>
 </div>
-
 <?php
 $show_on_front = get_option( 'show_on_front' );
 if ( 'posts' == $show_on_front ) :

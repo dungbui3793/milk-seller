@@ -119,6 +119,6 @@ jQuery(document).ready(function($){
     // listen when ajax cart has updated
     $(document).on('updated_wc_div', function(){
         wacListenChange();
-        $(".top-cart a").html("<i class=\"fa fa-shopping-cart\"></i>  My Cart -" + $(".cart_totals .cart-subtotal .woocommerce-Price-amount").text());
+        $(".top-cart a").html("<i class=\"fa fa-shopping-cart\"></i> My Cart - " + $(".cart_totals .cart-subtotal .woocommerce-Price-amount").not(".woocommerce-Price-currencySymbol").text() + " ");
     });
 });

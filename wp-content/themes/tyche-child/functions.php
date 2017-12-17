@@ -376,3 +376,15 @@ if( ! function_exists( 'custom_woocommerce_simple_add_to_cart' )) {
 //}
 
 /* ======= */
+
+
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
+
+function iconic_cart_count_fragments( $fragments ) {
+
+    $fragments['span.get-header-cart'] = '<span class="get-header-cart"> ' . number_format(WC()->cart->cart_contents_total) . '</span> ';
+
+    return $fragments;
+
+}

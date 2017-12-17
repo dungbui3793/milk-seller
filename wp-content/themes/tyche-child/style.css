@@ -1675,3 +1675,53 @@ body, html {
     margin-right: 0; }
   .search-page.woocommerce .tyche-has-sidebar ul.products li:nth-child(4n + 1) {
     clear: both; } }
+.woocommerce-cart-form .product-quantity .styled-number {
+  display: inline-block; }
+.woocommerce-cart-form .product-quantity .arrow-down, .woocommerce-cart-form .product-quantity .arrow-up {
+  display: none; }
+
+.top-header-bar-container .top-email {
+  display: none; }
+
+.content-area-1 h1 span:before,
+.content-area-1 h2 span:before,
+.content-area-1 h3 span:before,
+.content-area-1 h4 span:before,
+.content-area-1 h5 span:before,
+.content-area-1 h6 span:before,
+.content-area-2 h1 span:before,
+.content-area-2 h2 span:before,
+.content-area-2 h3 span:before,
+.content-area-2 h4 span:before,
+.content-area-2 h5 span:before,
+.content-area-2 h6 span:before,
+.content-area-3 h1 span:before,
+.content-area-3 h2 span:before,
+.content-area-3 h3 span:before,
+.content-area-3 h4 span:before,
+.content-area-3 h5 span:before,
+.content-area-3 h6 span:before,
+.content-area-4 h1 span:before,
+.content-area-4 h2 span:before,
+.content-area-4 h3 span:before,
+.content-area-4 h4 span:before,
+.content-area-4 h5 span:before,
+.content-area-4 h6 span:before,
+.content-area-5 h1 span:before,
+.content-area-5 h2 span:before,
+.content-area-5 h3 span:before,
+.content-area-5 h4 span:before,
+.content-area-5 h5 span:before,
+.content-area-5 h6 span:before {
+  width: 100%; }
+
+.woocommerce .woocommerce-info {
+  width: 100%; }
+  .woocommerce .woocommerce-info:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -khtml-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
