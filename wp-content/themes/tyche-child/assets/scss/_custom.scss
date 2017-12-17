@@ -418,4 +418,10 @@
 }
 
 
-
+.single-product.woocommerce div.product p.price {
+  .sale-percent {
+    color: #FF3B26;
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+}

@@ -23,7 +23,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<p class="price"><?php echo $product->get_price_html(); ?></p>
+<p class="price"><?php echo $product->get_price_html(); ?>
+    <?php if ( $product->is_on_sale() ) : ?>
+        <?php
+        $regularPrice = $product->get_regular_price();
+        $salePrice = $product->get_sale_price();
+        echo '<span class="sale-percent">';
+        echo '- ' . round(100 - ($salePrice / $regularPrice) * 100) . '%';
+        echo '</span>';
+
+        ?>
+
+    <?php endif; ?>
+</p>
 
 <?php
 
