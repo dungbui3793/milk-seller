@@ -1,0 +1,35 @@
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+  width: 100%;
+  float: none;
+}
+
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+  width: 100%;
+  float: none;
+}
+
+.woocommerce-checkout {
+  #place_order {
+    @media #{$info-tablet} {
+      right: 0;
+    }
+  }
+  #order_review table.woocommerce-checkout-review-order-table {
+
+    .cart-subtotal, .order-total {
+      th {
+        @media #{$info-tablet} {
+          display: none;
+        }
+      }
+    }
+
+    .product-quantity {
+      @media #{$info-tablet} {
+        margin-bottom: 0 !important;
+
+      }
+    }
+
+  }
+}

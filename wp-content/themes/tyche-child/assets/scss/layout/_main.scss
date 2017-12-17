@@ -1,16 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=vietnamese');
 
 body, html {
   font-size: 14px;
-  *:not(.fa, .dashicons) {
+  .site * {
     font-family: "Roboto", Arial,Helvetica,sans-serif !important;
+    .fa {
+      font-family: "FontAwesome" !important;
+    }
+    .dashicons, .dashicons-before:before {
+      font-family: dashicons !important;
+    }
   }
+
   @media #{$info-tablet} {
     font-size: 13px;
   }
   @media #{$info-phone} {
     font-size: 12px;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
 }
 
 .category-top {

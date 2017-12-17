@@ -20,11 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<table class="shop_table woocommerce-checkout-review-order-table">
+<table class="shop_table woocommerce-checkout-review-order-table shop_table_responsive">
 	<thead>
 		<tr>
 			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="product-total"><?php _e( 'Total', 'woocommerce' ); ?></th>
+            <th class="product-total"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
+            <th class="product-total"><?php _e( 'Price', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -37,13 +38,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 					?>
 					<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-						<td class="product-name">
+						<td class="product-name" data-title="Product">
 							<?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;'; ?>
-							<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>
-							<?php echo WC()->cart->get_item_data( $cart_item ); ?>
+
 						</td>
-						<td class="product-total">
-							<?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); ?>
+                        <td class="product-quantity" data-title="Quantity">
+                            <?php echo $cart_item['quantity'] ?>
+                        </td>
+						<td class="product-total" data-title="Price">
+                            <?php echo WC()->cart->get_product_price( $_product ); ?>
 						</td>
 					</tr>
 					<?php
@@ -56,14 +59,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<tfoot>
 
 		<tr class="cart-subtotal">
-			<th><?php _e( 'Subtotal', 'woocommerce' ); ?></th>
-			<td><?php wc_cart_totals_subtotal_html(); ?></td>
+			<th colspan="2"><?php _e( 'Subtotal', 'woocommerce' ); ?></th>
+			<td data-title="Subtotal"><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
 		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
 			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
-				<td><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
+				<th colspan="2"><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
+				<td data-title="Coupon"><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
 			</tr>
 		<?php endforeach; ?>
 
@@ -79,8 +82,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php foreach ( WC()->cart->get_fees() as $fee ) : ?>
 			<tr class="fee">
-				<th><?php echo esc_html( $fee->name ); ?></th>
-				<td><?php wc_cart_totals_fee_html( $fee ); ?></td>
+				<th colspan="2"><?php echo esc_html( $fee->name ); ?></th>
+				<td data-title="Fee"><?php wc_cart_totals_fee_html( $fee ); ?></td>
 			</tr>
 		<?php endforeach; ?>
 
@@ -88,14 +91,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) : ?>
 				<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) : ?>
 					<tr class="tax-rate tax-rate-<?php echo sanitize_title( $code ); ?>">
-						<th><?php echo esc_html( $tax->label ); ?></th>
-						<td><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
+						<th colspan="2"><?php echo esc_html( $tax->label ); ?></th>
+						<td data-title="Tax"><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
 					</tr>
 				<?php endforeach; ?>
 			<?php else : ?>
 				<tr class="tax-total">
-					<th><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></th>
-					<td><?php wc_cart_totals_taxes_total_html(); ?></td>
+					<th colspan="2"><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></th>
+					<td data-title="Tax total"><?php wc_cart_totals_taxes_total_html(); ?></td>
 				</tr>
 			<?php endif; ?>
 		<?php endif; ?>
@@ -103,8 +106,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<th><?php _e( 'Total', 'woocommerce' ); ?></th>
-			<td><?php wc_cart_totals_order_total_html(); ?></td>
+			<th colspan="2"><?php _e( 'Total', 'woocommerce' ); ?></th>
+			<td data-title="Total"><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
 
 		<?php do_action( 'woocommerce_review_order_after_order_total' ); ?>

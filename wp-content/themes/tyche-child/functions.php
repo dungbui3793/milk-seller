@@ -388,3 +388,10 @@ function iconic_cart_count_fragments( $fragments ) {
     return $fragments;
 
 }
+
+function my_woocommerce_custom_breadcrumbs() {
+    if(is_checkout() || is_cart()){
+        remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+    }
+}
+add_filter('woocommerce_before_main_content','my_woocommerce_custom_breadcrumbs');

@@ -225,11 +225,11 @@
       $( '.tyche-multilang-menu' ).menu();
     },
 
-    initZoom: function() {
-      $( '.tyche-product-image' ).zoom( {
-        url: $( this ).find( 'img' ).attr( 'data-src' )
-      } );
-    },
+    // initZoom: function() {
+    //   $( '.tyche-product-image' ).zoom( {
+    //     url: $( this ).find( 'img' ).attr( 'data-src' )
+    //   } );
+    // },
 
     initAdsenseLoader: function() {
       var selector = $( '.tyche-adsense' );
@@ -251,7 +251,7 @@
     Tyche.showHideMobileMenu();
     Tyche.initStyleSelects();
     Tyche.initNumberFields();
-    Tyche.initZoom();
+    // Tyche.initZoom();
   } );
 
   jQuery( window ).load( function() {
