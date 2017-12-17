@@ -4,8 +4,8 @@
   height: 200px;
   justify-content: center;
   align-items: center;
-  @media #{$info-phone} {
-    height: 100px;
+  @media #{$info-tablet} {
+    height: 150px;
   }
 }
 
@@ -179,6 +179,30 @@
   line-height: 1.2;
 }
 
+.tyche-product-body {
+  h3 {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1rem;
+    del {
+      color: #a2a2a2;
+    }
+    ins {
+      color: #242424;
+    }
+    .sale-percent {
+      color: #FF3B26;
+      font-size: 0.8rem;
+      margin-left: 5px;
+      @media #{$info-tablet} {
+        display: block;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 .zen-homepage-block-product {
 
   .custom-category-block {
@@ -235,14 +259,6 @@
       font-size: 1.25rem;
       margin-bottom: 10px;
       margin-top: 0;
-    }
-    .tyche-product-body {
-      h3 {
-        font-size: 1rem;
-      }
-      .price {
-        font-size: 1rem;
-      }
     }
   }
   .block-slide-product {

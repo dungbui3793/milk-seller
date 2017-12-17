@@ -92,9 +92,20 @@ $posts = Tyche_Helper::get_products( $params ); ?>
                     <div class="tyche-product <?php echo ! empty( $params['color'] ) ? esc_attr( $params['color'] ) : '' ?>">
                         <?php woocommerce_template_loop_product_link_open() ?>
                         <div class="tyche-product-image">
+                            <?php
+                            $regularPrice = $product->get_regular_price();
+                            $salePrice = $product->get_sale_price();
+                            ?>
                             <?php if ( $product->is_on_sale() ) : ?>
+                                <span class="onsale">
+                                                    <span class="hidden-xs hidden-md">Sale!</span>
+                                    <?php
+                                    echo '<span class="sale-percent visible-xs visible-md">';
+                                    echo '- ' . round(100 - ($salePrice / $regularPrice) * 100) . '%';
+                                    echo '</span>';
 
-                                <?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'tyche' ) . '</span>', $post, $product ); ?>
+                                    ?>
+                                                </span>
 
                             <?php endif; ?>
 
@@ -127,13 +138,21 @@ $posts = Tyche_Helper::get_products( $params ); ?>
                         </div>
                         <?php woocommerce_template_loop_product_link_close() ?>
                         <div class="tyche-product-body">
-                            <h3><?php woocommerce_template_loop_product_link_open() ?><?php echo get_the_title(); ?><?php woocommerce_template_loop_product_link_close() ?></h3>
+                            <h3><?php woocommerce_template_loop_product_link_open() ?><?php explore_name(get_the_title()) ?><?php woocommerce_template_loop_product_link_close() ?></h3>
                             <?php $rating_html = wc_get_rating_html( $product->get_average_rating() ); ?>
                             <?php if ( 'yes' === $params['show_rating'] && $rating_html ) : ?><?php echo $rating_html; ?><?php endif; ?>
 
-                            <?php $price_html = $product->get_price_html() ?>
+                            <?php
+                            $price_html = $product->get_price_html() ;
+                            ?>
                             <?php if ( $price_html ) : ?>
-                                <span class="price"><?php echo $price_html; ?></span>
+                                <span class="price"><?php echo $price_html;
+                                    if($product->is_on_sale()) {
+                                        echo '<span class="sale-percent  hidden-xs hidden-md">';
+                                        echo '- ' . round(100 - ($salePrice / $regularPrice) * 100) . '%';
+                                        echo '</span>';
+                                    }
+                                ?></span>
                             <?php endif; ?>
 
                             <?php

@@ -1289,8 +1289,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 14px; }
 
-.suggestion-item h3 {
-  margin-top: 40px; }
+.suggestion-item h3 a:visited {
+  color: #2a313e; }
 .suggestion-item .clearfix {
   position: relative; }
 .suggestion-item .owl-nav {
@@ -1355,9 +1355,9 @@ h1, h2, h3, h4, h5, h6 {
 .item .tyche-product .tyche-product-image {
   height: 200px;
   background: #fff; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 800px) {
     .item .tyche-product .tyche-product-image {
-      height: 100px; } }
+      height: 150px; } }
 
 .group-product {
   margin-top: 20px;
@@ -1457,9 +1457,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 200px;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 800px) {
     .tyche-product .tyche-product-image {
-      height: 100px; } }
+      height: 150px; } }
 
 .woocommerce div.product form.cart .variations {
   table-layout: auto; }
@@ -1582,6 +1582,23 @@ h1, h2, h3, h4, h5, h6 {
 .no-products {
   line-height: 1.2; }
 
+.tyche-product-body h3 {
+  font-size: 1rem; }
+.tyche-product-body .price {
+  font-size: 1rem; }
+  .tyche-product-body .price del {
+    color: #a2a2a2; }
+  .tyche-product-body .price ins {
+    color: #242424; }
+  .tyche-product-body .price .sale-percent {
+    color: #FF3B26;
+    font-size: 0.8rem;
+    margin-left: 5px; }
+    @media only screen and (max-width: 800px) {
+      .tyche-product-body .price .sale-percent {
+        display: block;
+        font-size: 1rem; } }
+
 .zen-homepage-block-product .custom-category-block {
   margin-bottom: 40px; }
   .zen-homepage-block-product .custom-category-block .clearfix {
@@ -1637,10 +1654,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
   margin-bottom: 10px;
   margin-top: 0; }
-.zen-homepage-block-product .block-slide-product-wrap .tyche-product-body h3 {
-  font-size: 1rem; }
-.zen-homepage-block-product .block-slide-product-wrap .tyche-product-body .price {
-  font-size: 1rem; }
 .zen-homepage-block-product .block-slide-product .owl-nav {
   position: absolute;
   top: 20%;

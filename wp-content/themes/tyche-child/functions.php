@@ -103,9 +103,20 @@ if( ! function_exists( 'gmv_hot_item_top')) {
                                 <a  href="<?php echo get_the_permalink(); ?>" class="">
                                     <div class="tyche-product primary">
                                         <div class="tyche-product-image">
+                                            <?php
+                                            $regularPrice = $product->get_regular_price();
+                                            $salePrice = $product->get_sale_price();
+                                            ?>
                                             <?php if ( $product->is_on_sale() ) : ?>
+                                                <span class="onsale">
+                                                    <span class="hidden-xs hidden-md">Sale!</span>
+                                                <?php
+                                                echo '<span class="sale-percent visible-xs visible-md">';
+                                                echo '- ' . round(100 - ($salePrice / $regularPrice) * 100) . '%';
+                                                echo '</span>';
 
-                                                <span class="onsale">Sale!</span>
+                                                ?>
+                                                </span>
 
                                             <?php endif; ?>
                                             <?php
@@ -117,8 +128,22 @@ if( ! function_exists( 'gmv_hot_item_top')) {
                                             ?>
                                         </div>
                                         <div class="tyche-product-body">
-                                            <h3><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a> </h3>
-                                            <span class="price"><?php  echo $product->get_price_html(); ?></span>
+                                            <h3><a href="<?php echo get_the_permalink(); ?>">
+                                                    <?php
+                                                    explore_name (get_the_title());
+                                                    ?>
+                                                </a> </h3>
+                                            <span class="price"><?php  echo $product->get_price_html(); ?>
+                                            <?php
+
+
+                                                if($product->is_on_sale()) {
+                                                    echo '<span class="sale-percent hidden-xs hidden-md">';
+                                                    echo '- ' . round(100 - ($salePrice / $regularPrice) * 100) . '%';
+                                                    echo '</span>';
+                                                }
+                                                ?>
+                                            </span>
                                             <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
                                         </div>
                                     </div>
@@ -395,3 +420,15 @@ function my_woocommerce_custom_breadcrumbs() {
     }
 }
 add_filter('woocommerce_before_main_content','my_woocommerce_custom_breadcrumbs');
+
+if( ! function_exists('explore_name')) {
+    function explore_name($input) {
+        $str = $input;
+        if( strlen( $input) > 60) {
+            $str = explode( "\n", wordwrap( $input, 60));
+            $str = $str[0] . '...';
+        }
+
+        echo $str;
+    }
+}

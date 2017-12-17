@@ -107,7 +107,9 @@ h1, h2, h3, h4, h5, h6 {
   //padding: 0 15px;
   //margin-bottom: 50px;
   h3 {
-    margin-top: 40px;
+    a:visited {
+      color: #2a313e;
+    }
   }
   .clearfix {
     position: relative;
@@ -195,8 +197,8 @@ h1, h2, h3, h4, h5, h6 {
     .tyche-product-image {
       height: 200px;
       background: #fff;
-      @media #{$info-phone} {
-        height: 100px;
+      @media #{$info-tablet} {
+        height: 150px;
       }
     }
   }
