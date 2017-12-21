@@ -432,3 +432,13 @@ if( ! function_exists('explore_name')) {
         echo $str;
     }
 }
+
+
+// Search result is woocomerce only
+add_action( 'pre_get_posts', 'wpse223576_search_woocommerce_only' );
+
+function wpse223576_search_woocommerce_only( $query ) {
+    if( ! is_admin() && is_search() && $query->is_main_query() ) {
+        $query->set( 'post_type', 'product' );
+    }
+}
