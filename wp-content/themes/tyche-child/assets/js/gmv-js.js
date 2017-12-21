@@ -174,5 +174,13 @@ $(function () {
             }
         }
     });
+
+//    Check if function is null product
+
+    var $nullProduct = $(".hidden-search-no-result");
+    if($nullProduct.length > 0) {
+        $nullProduct.parents("body.tax-product_cat").addClass("null-product-archive");
+        $nullProduct.parents("body.tax-product_cat").find(".custom-sidebar").parent('.col-xs-12.col-md-4').remove();
+    }
 });
 

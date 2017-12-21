@@ -165,7 +165,7 @@ get_header( 'shop' ); ?>
                     )
                 )
                 ) : ?>
-
+                    <div class="hidden-search-no-result"></div>
                     <?php
                     /**
                      * woocommerce_no_products_found hook.
