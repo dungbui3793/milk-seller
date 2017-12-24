@@ -1,0 +1,21 @@
+.logged-in.woocommerce-account {
+  .woocommerce {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    .woocommerce-MyAccount-navigation {
+      width: 25%;
+      padding: 15px;
+      @media #{$info-phone} {
+        width: 100%;
+      }
+    }
+
+    .woocommerce-MyAccount-content {
+      width: 75%;
+      padding: 15px;
+      @media #{$info-phone} {
+        width: 100%;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,62 @@
+.custom-login-page {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .u-columns {
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+    form.login {
+      .button {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+    }
+    form.login,
+    form.register {
+      margin: 0;
+      border: none;
+      .woocommerce-form-row {
+        label {
+          display: inline-block;
+          min-width: 120px;
+          padding-right: 10px;
+          text-align: right;
+        }
+        input {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
+
+.woocommerce-account {
+  .woocommerce .col2-set .col-1,
+  .woocommerce-page .col2-set .col-1,
+  .woocommerce .col2-set .col-2,
+  .woocommerce-page .col2-set .col-2 {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+    @media #{$info-phone} {
+      width: 100%;
+    }
+  }
+}
+
+
+.woocommerce-account,
+.woocommerce-cart,
+.woocommerce-checkout {
+  .tyche-breadcrumbs span:nth-child(3),
+  .tyche-breadcrumbs span:nth-child(2) {
+    display: none;
+  }
+}
