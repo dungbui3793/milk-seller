@@ -1,6 +1,6 @@
 .add_to_cart_button {
   text-transform: none !important;
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
   .fa {
     margin-right: 3px;
   }
@@ -42,7 +42,7 @@
     }
     .onsale {
       @media #{$info-phone} {
-        font-size: 15px;
+        font-size: 1rem;
         min-width: 100px;
         min-height: 25px;
         line-height: 25px;

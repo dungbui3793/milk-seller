@@ -25,8 +25,19 @@ global $post, $product;
 ?>
 <?php if ( $product->is_on_sale() ) : ?>
 
+	<?php
+    $regularPrice = $product->get_regular_price();
+    $salePrice = $product->get_sale_price();
+	?>
 	<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
-
+	<span class="onsale">
+		<span class="hidden-xs hidden-md">Sale!</span>
+        <?php
+        echo '<span class="sale-percent visible-xs visible-md">';
+        echo '- ' . round(100 - ($salePrice / $regularPrice) * 100) . '%';
+        echo '</span>';
+        ?>
+	</span>
 <?php endif;
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

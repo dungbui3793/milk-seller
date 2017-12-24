@@ -38,7 +38,7 @@ if ( $breadcrumbs_enabled ) { ?>
                             ?>
 
                             <header class="page-header">
-                                <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'tyche' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+                                <h1 class="page-title"><?php printf( esc_html__( 'Kết quả tìm kiếm cho: %s', 'tyche' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
                             </header><!-- .page-header -->
 
                             <ul class="products">

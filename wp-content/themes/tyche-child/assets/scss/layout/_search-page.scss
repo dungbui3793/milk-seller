@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+  .search-page {
+    &.woocommerce .tyche-has-sidebar ul.products li {
+      &.product {
+        width: 18.4%;
+        margin: 0 2% 2.992em 0;
+
+      }
+      &.first {
+        clear: initial;
+      }
+      &.last {
+        margin-right: 2%;
+      }
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+      &:nth-child(5n + 1) {
+        clear: both;
+      }
+      //&:nth-child(4n) {
+      //  margin-right: 2%;
+      //}
+      &:nth-child(4n + 1) {
+        clear: initial;
+      }
+    }
+  }
+}
