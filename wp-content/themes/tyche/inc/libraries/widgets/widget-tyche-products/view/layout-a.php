@@ -79,10 +79,13 @@ $posts = Tyche_Helper::get_products( $params ); ?>
 
 
     <div class="block-slide-product-wrap">
-        <h3><?php
-            echo $params['title'] . ' mới về';
-            ?>
-        </h3>
+        <a href="<?php echo get_term_link($cateId); ?>">
+            <h3><?php
+                echo $params['title'] . ' mới về';
+                ?>
+            </h3>
+        </a>
+
         <div class="block-slide-product owl-carousel">
 
             <?php while ( $posts->have_posts() ) : $posts->the_post();

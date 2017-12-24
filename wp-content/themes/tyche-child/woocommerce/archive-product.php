@@ -23,162 +23,29 @@ $layout = get_theme_mod( 'tyche_shop_layout', 'fullwidth' );
 
 get_header( 'shop' ); ?>
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<?php
-			/**
-			 * woocommerce_before_main_content hook.
-			 *
-			 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-			 * @hooked woocommerce_breadcrumb - 20
-			 * @hooked WC_Structured_Data::generate_website_data() - 30
-			 */
-			do_action( 'woocommerce_before_main_content' );
-			?>
-		</div>
-	</div>
-
-    <?php
-
-    $term = get_queried_object();
-
-    $children = get_terms( $term->taxonomy, array(
-        'parent'    => $term->term_id,
-        'hide_empty' => false
-    ) );
-    if($children) {
-//        if current category is top category
-        ?>
-        <div class="custom-archive-product-top">
-            <div class="row">
-                <?php
-                foreach ($children as $eachChildCate) {
-                    $cateID = $eachChildCate->term_id;
-                    $thumbnail_id = get_woocommerce_term_meta( $cateID, 'thumbnail_id', true );
-                    $image = wp_get_attachment_url( $thumbnail_id );
-                    ?>
-
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="<?php echo get_term_link($cateID); ?>" class="item">
-                            <div class="img-hover">
-                                <img class="img-responsive" src="<?php echo $image; ?>" alt="">
-                            </div>
-                            <p><?php echo $eachChildCate->name; ?><b> (<?php echo $eachChildCate->count; ?>) </b></p>
-                        </a>
-                    </div>
-                    <?php
-                }
-                ?>
-            </div>
+    <div class="row">
+        <div class="col-md-12">
+            <?php
+            /**
+             * woocommerce_before_main_content hook.
+             *
+             * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+             * @hooked woocommerce_breadcrumb - 20
+             * @hooked WC_Structured_Data::generate_website_data() - 30
+             */
+            do_action( 'woocommerce_before_main_content' );
+            ?>
         </div>
+    </div>
 
-        <?php
-
-    } else {
-        //        if current category is not top category
-        ?>
-
-        <div class="row">
-            <?php if ( is_active_sidebar( 'shop-sidebar' ) && 'left' === $layout ) : ?>
-                <div class="col-xs-12">
-                    <div class="custom-filter-mobile"><i class="fa fa-bars" aria-hidden="true"></i>Filter</div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="custom-sidebar">
-                        <div class="custom-clear-filter hidden-xs"><i class="fa fa-pencil" aria-hidden="true"></i>Clear filter</div>
-                        <?php
-                        /**
-                         * woocommerce_sidebar hook.
-                         *
-                         * @hooked woocommerce_get_sidebar - 10
-                         */
-                        do_action( 'woocommerce_sidebar' );
-                        ?>
-                        <div class="custom-clear-filter visible-xs"><i class="fa fa-pencil" aria-hidden="true"></i>Clear filter</div>
-                    </div>
-                </div>
-            <?php endif; ?>
-            <div class="<?php echo ( is_active_sidebar( 'shop-sidebar' ) && 'fullwidth' !== $layout ) ? 'col-md-8 tyche-has-sidebar' : 'col-md-12' ?>">
-                <?php
-                /**
-                 * woocommerce_archive_description hook.
-                 *
-                 * @hooked woocommerce_taxonomy_archive_description - 10
-                 * @hooked woocommerce_product_archive_description - 10
-                 */
-                do_action( 'woocommerce_archive_description' );
-                ?>
-
-                <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
-                    <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-
-                <?php endif; ?>
-
-                <?php if ( have_posts() ) : ?>
-
-                    <?php
-                    /**
-                     * woocommerce_before_shop_loop hook.
-                     *
-                     * @hooked wc_print_notices - 10
-                     * @hooked woocommerce_result_count - 20
-                     * @hooked woocommerce_catalog_ordering - 30
-                     */
-                    do_action( 'woocommerce_before_shop_loop' );
-                    ?>
-
-                    <?php woocommerce_product_loop_start(); ?>
-
-                    <?php woocommerce_product_subcategories(); ?>
-
-                    <?php while ( have_posts() ) : the_post(); ?>
-
-                        <?php
-                        /**
-                         * woocommerce_shop_loop hook.
-                         *
-                         * @hooked WC_Structured_Data::generate_product_data() - 10
-                         */
-                        do_action( 'woocommerce_shop_loop' );
-                        ?>
-
-                        <?php wc_get_template_part( 'content', 'product' ); ?>
-
-                    <?php endwhile; // end of the loop. ?>
-
-                    <?php woocommerce_product_loop_end(); ?>
-
-                    <?php
-                    /**
-                     * woocommerce_after_shop_loop hook.
-                     *
-                     * @hooked woocommerce_pagination - 10
-                     */
-                    do_action( 'woocommerce_after_shop_loop' );
-                    ?>
-
-                <?php elseif ( ! woocommerce_product_subcategories(
-                    array(
-                        'before' => woocommerce_product_loop_start( false ),
-                        'after'  => woocommerce_product_loop_end( false ),
-                    )
-                )
-                ) : ?>
-                    <div class="hidden-search-no-result"></div>
-                    <?php
-                    /**
-                     * woocommerce_no_products_found hook.
-                     *
-                     * @hooked wc_no_products_found - 10
-                     */
-                    do_action( 'woocommerce_no_products_found' );
-                    ?>
-
-                <?php endif; ?>
+    <div class="row">
+        <?php if ( is_active_sidebar( 'shop-sidebar' ) && 'left' === $layout ) : ?>
+            <div class="col-xs-12">
+                <div class="custom-filter-mobile"><i class="fa fa-bars" aria-hidden="true"></i>Filter</div>
             </div>
-            <?php if ( is_active_sidebar( 'shop-sidebar' ) && 'right' === $layout ) : ?>
-                <div class="col-md-4 hidden-xs">
+            <div class="col-xs-12 col-md-3">
+                <div class="custom-sidebar">
+                    <div class="custom-clear-filter hidden-xs"><i class="fa fa-pencil" aria-hidden="true"></i>Clear filter</div>
                     <?php
                     /**
                      * woocommerce_sidebar hook.
@@ -187,20 +54,163 @@ get_header( 'shop' ); ?>
                      */
                     do_action( 'woocommerce_sidebar' );
                     ?>
+                    <div class="custom-clear-filter visible-xs"><i class="fa fa-pencil" aria-hidden="true"></i>Clear filter</div>
                 </div>
-            <?php endif; ?>
-            <?php
-            /**
-             * woocommerce_after_main_content hook.
-             *
-             * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-             */
-            do_action( 'woocommerce_after_main_content' );
-            ?>
-        </div>
-
+            </div>
+        <?php endif; ?>
         <?php
-    }
+
+        $term = get_queried_object();
+
+        $children = get_terms( $term->taxonomy, array(
+            'parent'    => $term->term_id,
+            'hide_empty' => false
+        ) );
+
+        ?>
+        <div class="<?php echo ( is_active_sidebar( 'shop-sidebar' ) && 'fullwidth' !== $layout ) ? 'col-md-9 tyche-has-sidebar' : 'col-md-12' ?>">
+
+            <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+
+                <h1 class="<?php echo ($children) ? 'custom-archive-title' : 'woocommerce-products-header__title page-title'?> "><?php woocommerce_page_title(); ?></h1>
+
+            <?php endif; ?>
+
+            <?php
+            if($children) {
+//        if current category is top category
+                ?>
+                <div class="custom-archive-product-top">
+                    <?php
+                    do_action( 'woocommerce_archive_description' );
+                    ?>
+                    <div class="row">
+                        <?php
+                        foreach ($children as $eachChildCate) {
+                            $cateID = $eachChildCate->term_id;
+                            $thumbnail_id = get_woocommerce_term_meta( $cateID, 'thumbnail_id', true );
+                            $image = wp_get_attachment_url( $thumbnail_id );
+                            ?>
+
+                            <div class="col-xs-6 col-sm-3">
+                                <a href="<?php echo get_term_link($cateID); ?>" class="item">
+                                    <div class="img-hover">
+                                        <img class="img-responsive" src="<?php echo $image; ?>" alt="">
+                                    </div>
+                                    <p><?php echo $eachChildCate->name; ?><b> (<?php echo $eachChildCate->count; ?>) </b></p>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+
+                <?php
+
+            }
+
+
+            /**
+             * woocommerce_archive_description hook.
+             *
+             * @hooked woocommerce_taxonomy_archive_description - 10
+             * @hooked woocommerce_product_archive_description - 10
+             */
+            ?>
+            <?php
+
+            ?>
+            <h2 class="<?php echo ($children) ? 'custom-archive-title-02' : 'hidden' ?>">Sản phẩm mới về</h2>
+            <?php if ( have_posts() ) : ?>
+
+                <?php
+                /**
+                 * woocommerce_before_shop_loop hook.
+                 *
+                 * @hooked wc_print_notices - 10
+                 * @hooked woocommerce_result_count - 20
+                 * @hooked woocommerce_catalog_ordering - 30
+                 */
+                do_action( 'woocommerce_before_shop_loop' );
+                ?>
+
+                <?php woocommerce_product_loop_start(); ?>
+
+                <?php woocommerce_product_subcategories(); ?>
+
+                <?php while ( have_posts() ) : the_post(); ?>
+
+                    <?php
+                    /**
+                     * woocommerce_shop_loop hook.
+                     *
+                     * @hooked WC_Structured_Data::generate_product_data() - 10
+                     */
+                    do_action( 'woocommerce_shop_loop' );
+                    ?>
+
+                    <?php wc_get_template_part( 'content', 'product' ); ?>
+
+                <?php endwhile; // end of the loop. ?>
+
+                <?php woocommerce_product_loop_end(); ?>
+
+                <?php
+                /**
+                 * woocommerce_after_shop_loop hook.
+                 *
+                 * @hooked woocommerce_pagination - 10
+                 */
+                do_action( 'woocommerce_after_shop_loop' );
+                ?>
+
+            <?php elseif ( ! woocommerce_product_subcategories(
+                array(
+                    'before' => woocommerce_product_loop_start( false ),
+                    'after'  => woocommerce_product_loop_end( false ),
+                )
+            )
+            ) : ?>
+                <div class="hidden-search-no-result"></div>
+                <?php
+                /**
+                 * woocommerce_no_products_found hook.
+                 *
+                 * @hooked wc_no_products_found - 10
+                 */
+                do_action( 'woocommerce_no_products_found' );
+                ?>
+
+            <?php endif; ?>
+        </div>
+        <?php if ( is_active_sidebar( 'shop-sidebar' ) && 'right' === $layout ) : ?>
+            <div class="col-md-4 hidden-xs">
+                <?php
+                /**
+                 * woocommerce_sidebar hook.
+                 *
+                 * @hooked woocommerce_get_sidebar - 10
+                 */
+                do_action( 'woocommerce_sidebar' );
+                ?>
+            </div>
+        <?php endif; ?>
+        <?php
+        /**
+         * woocommerce_after_main_content hook.
+         *
+         * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+         */
+        do_action( 'woocommerce_after_main_content' );
+        ?>
+    </div>
+
+
+
+    <?php
+
+
 
     ?>
 

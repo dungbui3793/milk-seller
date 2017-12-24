@@ -180,7 +180,11 @@ $(function () {
     var $nullProduct = $(".hidden-search-no-result");
     if($nullProduct.length > 0) {
         $nullProduct.parents("body.tax-product_cat").addClass("null-product-archive");
-        $nullProduct.parents("body.tax-product_cat").find(".custom-sidebar").parent('.col-xs-12.col-md-4').remove();
+        $nullProduct.parents("body.tax-product_cat").find(".custom-sidebar").parent('.col-xs-12.col-md-3').remove();
     }
+
+    $(".add_to_cart_button").click(function () {
+        alert('Sản phẩm đã được thêm vào giỏ hàng!');
+    })
 });
 

@@ -70,11 +70,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .custom-archive-product-top {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
   .item {
     .img-hover {
       overflow: hidden;
       @include flex();
-      height: 270px;
+      height: 150px;
       width: 100%;
       justify-content: center;
       align-items: center;

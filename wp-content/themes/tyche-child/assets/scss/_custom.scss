@@ -45,8 +45,9 @@
   border: 1px solid $border-color;
   padding: 15px;
   .product_title {
+    font-size: 1.25rem;
     @include custom-title();
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -84,49 +85,10 @@
 //  }
 //}
 
-.woocommerce ul.products li.product {
-  a {
-    img {
-      height: 155px;
-      width: inherit;
-      margin: auto;
-      @media #{$info-phone} {
-        height: 100px;
-      }
-    }
-    h2.woocommerce-loop-product__title {
-      min-height: 68px;
-      @media #{$info-tablet} {
-        font-size: 16px;
-      }
-    }
-    .onsale {
-      @media #{$info-phone} {
-        font-size: 15px;
-        min-width: 100px;
-        min-height: 25px;
-        line-height: 25px;
-        top: 4px;
-        left: -35px;
-      }
-    }
-  }
-  
-  .price {
-    @media #{$info-phone} {
-      font-size: 16px;
-    }
-  }
-
-  .button {
-    @media #{$info-phone} {
-      font-size: 12px;
-      padding: 10px;
-    }
-  }
-}
-
 .woocommerce .woocommerce-products-header__title.page-title {
+  text-transform: none;
+  font-size: 2rem;
+  margin: 0 0 0.67em;
   @media #{$info-phone} {
     margin-top: 20px;
   }
@@ -182,6 +144,9 @@
 .tyche-product-body {
   h3 {
     font-size: 1rem;
+    @media #{$info-phone} {
+      font-size: 1rem;
+    }
   }
   .price {
     font-size: 1rem;
@@ -255,11 +220,12 @@
   }
 
   .block-slide-product-wrap {
-    > h3 {
+    > a > h3 {
       font-size: 1.25rem;
       margin-bottom: 10px;
       margin-top: 0;
     }
+
   }
   .block-slide-product {
     .owl-nav {
@@ -425,10 +391,6 @@
     font-size: 1.2rem;
     margin-left: 5px;
   }
-}
-
-.woocommerce ul.products li.product a h2.woocommerce-loop-product__title {
-  font-size: 1rem;
 }
 
 // null product
