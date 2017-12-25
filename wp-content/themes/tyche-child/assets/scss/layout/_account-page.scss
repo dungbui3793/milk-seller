@@ -1,21 +1,90 @@
 .logged-in.woocommerce-account {
   .woocommerce {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    @include flex();
+    flex-wrap: wrap;
+    .woocommerce-message {
+      margin-bottom: 0;
+      width: 100%;
+    }
     .woocommerce-MyAccount-navigation {
       width: 25%;
       padding: 15px;
       @media #{$info-phone} {
         width: 100%;
       }
+      ul li {
+        margin-bottom: 10px;
+        &.is-active {
+          font-weight: 500;
+          a {
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: -3px;
+              left: 0;
+              width: calc(100% + 3px);
+              max-width: 100%;
+              height: 2px;
+              background-color: #f88c7a;
+            }
+          }
+        }
+        a {
+          color: #000;
+          &:hover {
+            color: #f88c7a;
+          }
+        }
+      }
     }
 
     .woocommerce-MyAccount-content {
       width: 75%;
       padding: 15px;
+      border-left: 1px solid #ccc;
       @media #{$info-phone} {
         width: 100%;
+        border-left: none;
+        border-top: 1px solid #ccc;
       }
     }
   }
 
+}
+
+.woocommerce-MyAccount-content {
+  .woocommerce-Address-title {
+    h3 {
+      margin: 0 0 20px;
+    }
+  }
+  .woocommerce-orders-table {
+    .button {
+      color: #f88c7a;
+      padding: 0;
+      background: none;
+      border: none;
+      display: block;
+      text-decoration: underline;
+      margin: 5px 0;
+      font-weight: normal;
+      font-size: 1rem;
+      &:hover, &:focus, &:visited {
+        background: none;
+        color: #f88c7a;
+      }
+    }
+  }
+}
+
+.woocommerce-account.woocommerce-edit-address .woocommerce .col2-set .col-2 {
+  border-right: none;
+}
+
+.woocommerce-account.woocommerce-edit-address .woocommerce .col2-set .col-1 {
+  @media #{$info-phone} {
+    border-right: none;
+  }
 }
