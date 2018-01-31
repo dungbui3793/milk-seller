@@ -186,5 +186,14 @@ $(function () {
     $(".add_to_cart_button").click(function () {
         alert('Sản phẩm đã được thêm vào giỏ hàng!');
     })
+
+    $('.zen-navigation .custom-menu > li > .dropdown-menu').each(function () {
+        $(this).width($('.container').width() - 200 - 30);
+    })
 });
 
+$(window).resize(function () {
+    $('.zen-navigation .custom-menu > li > .dropdown-menu').each(function () {
+        $(this).width($('.container').width() - 200 - 30);
+    })
+})

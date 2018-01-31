@@ -13,9 +13,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<ul class="top-header-bar">
+				<ul class="top-header-bar hidden-xs">
 					<!-- Email -->
-					<li class="top-email">
+					<li class="top-email hidden-xs">
 						<i class="fa fa-envelope-o"></i> <?php echo esc_html( get_theme_mod( 'tyche_top_bar_email', get_option( 'admin_email' ) ) ); ?>
 					</li>
 					<!-- / Email -->
