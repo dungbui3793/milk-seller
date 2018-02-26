@@ -123,133 +123,141 @@
         </div>
 
 
-		<nav id="site-navigation" class="zen-navigation" role="navigation">
-            <div class="container">
-                <div class="navigation-wrap">
-                    <p class="lbl  hidden-xs">
-                        <i class="fa fa-bars"></i>
-                        <span class="text-uppercase">Tất cả DANH MỤC</span>
-                        <i class="angle fa fa-angle-down"></i>
-                    </p>
-                    <?php
-                    wp_nav_menu(
-                        array(
-                            'menu'           => 'primary',
-                            'theme_location' => 'primary',
-                            'depth'          => 3,
-                            'container'      => '',
-                            'menu_id'        => 'desktop-menu',
-                            'menu_class'     => 'custom-menu  hidden-xs',
-                            'fallback_cb'    => 'Tyche_Navwalker::fallback',
-                            'walker'         => new Tyche_Navwalker(),
-                        )
-                    );
-                    ?>
-                    <div class="row visible-xs mobile-menu-wrap">
-                        <div class="col-md-12">
+	</header><!-- #masthead -->
 
-                            <!-- /// Mobile Menu Trigger //////// -->
-                            						<a href="#" id="mobile-menu-trigger"> <i class="fa fa-bars"></i> </a>
-                            <!-- end #mobile-menu-trigger -->
-                            <?php
-                            $enable_search_bar = get_theme_mod( 'tyche_enable_top_bar_search', 'enabled' );
-                            ?>
-                            <?php if ( 'enabled' === $enable_search_bar ) : ?>
-                                <!-- Top Search -->
-                                <div class="top-search top-search-xs">
-                                    <!-- Search Form -->
-                                    <form role="search" method="get" class="pull-right" id="searchform_topbar" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                                        <label>
-                                            <span class="screen-reader-text"><?php esc_html__( 'Search for:', 'tyche' ); ?></span>
-                                            <input class="search-field-top-bar" id="search-field-top-bar" placeholder="<?php echo esc_attr__( 'Search ...', 'tyche' ); ?>" value="" name="s" type="search">
-                                        </label>
-                                        <button id="search-top-bar-submit" type="submit" class="search-top-bar-submit">
-                                            <span class="fa fa-search"></span>
-                                        </button>
-                                    </form>
-                                </div><!-- / Top Search -->
-                            <?php endif; ?>
+    <div class="zen-banner-wrap">
+        <div class="container">
+            <div class="clearfix">
+                <nav id="site-navigation" class="zen-navigation" role="navigation">
+                    <div class="navigation-wrap">
+                        <p class="lbl  hidden-xs">
+                            <i class="fa fa-bars"></i>
+                            <span class="text-uppercase">Tất cả DANH MỤC</span>
+                            <i class="angle fa fa-angle-down"></i>
+                        </p>
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'menu'           => 'primary',
+                                'theme_location' => 'primary',
+                                'depth'          => 3,
+                                'container'      => '',
+                                'menu_id'        => 'desktop-menu',
+                                'menu_class'     => 'custom-menu  hidden-xs',
+                                'fallback_cb'    => 'Tyche_Navwalker::fallback',
+                                'walker'         => new Tyche_Navwalker(),
+                            )
+                        );
+                        ?>
+                        <div class="row visible-xs mobile-menu-wrap">
+                            <div class="col-md-12">
+
+                                <!-- /// Mobile Menu Trigger //////// -->
+                                <a href="#" id="mobile-menu-trigger"> <i class="fa fa-bars"></i> </a>
+                                <!-- end #mobile-menu-trigger -->
+                                <?php
+                                $enable_search_bar = get_theme_mod( 'tyche_enable_top_bar_search', 'enabled' );
+                                ?>
+                                <?php if ( 'enabled' === $enable_search_bar ) : ?>
+                                    <!-- Top Search -->
+                                    <div class="top-search top-search-xs">
+                                        <!-- Search Form -->
+                                        <form role="search" method="get" class="pull-right" id="searchform_topbar" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                                            <label>
+                                                <span class="screen-reader-text"><?php esc_html__( 'Search for:', 'tyche' ); ?></span>
+                                                <input class="search-field-top-bar" id="search-field-top-bar" placeholder="<?php echo esc_attr__( 'Search ...', 'tyche' ); ?>" value="" name="s" type="search">
+                                            </label>
+                                            <button id="search-top-bar-submit" type="submit" class="search-top-bar-submit">
+                                                <span class="fa fa-search"></span>
+                                            </button>
+                                        </form>
+                                    </div><!-- / Top Search -->
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+                </nav><!-- #site-navigation -->
+                <?php
+                /**
+                 * Enable / Disable the main slider
+                 */
+                $show_on_front = get_option( 'show_on_front' );
+                if ( get_theme_mod( 'tyche_enable_main_slider', true ) && is_front_page() && 'posts' !== $show_on_front ) :
+                    get_template_part( 'template-parts/main-slider' );
+                endif;
+                ?>
+            </div>
+            <div class="main-slider">
                 <div class="main-slider-bar hidden-xs">
-                    <ul class="main-slider-info clearfix">
-                        <li class="hidden-xs hidden-sm">
-                            <div class="main-slider-info-cell">
-                                <div class="cell-icon">
-                                    <?php
-                                    $icon = get_theme_mod( 'info_section_one_icon', 'fa fa-automobile' );
-                                    if ( 'fa fa-automobile' !== $icon ) {
-                                        $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_one_icon' );
-                                    }
-                                    ?>
-                                    <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                    <div class="container">
+                        <ul class="main-slider-info">
+                            <li class="col-sm-4 col-xs-12">
+                                <div class="main-slider-info-cell">
+                                    <div class="cell-icon">
+                                        <?php
+                                        $icon = get_theme_mod( 'info_section_one_icon', 'fa fa-automobile' );
+                                        if ( 'fa fa-automobile' !== $icon ) {
+                                            $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_one_icon' );
+                                        }
+                                        ?>
+                                        <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                    </div>
+                                    <div class="cell-content">
+							<span class="cell-caption">
+								<?php echo wp_kses_post( get_theme_mod( 'info_section_one_text', 'FREE SHIPPING' ) ); ?>
+							</span> <span class="cell-subcaption">
+								<?php echo wp_kses_post( get_theme_mod( 'info_section_one_subtext', 'On all orders over 90$' ) ); ?>
+							</span>
+                                    </div>
                                 </div>
-                                <div class="cell-content">
-                                    <span class="cell-caption">
-                                        <?php echo wp_kses_post( get_theme_mod( 'info_section_one_text', 'FREE SHIPPING' ) ); ?>
-                                    </span> <span class="cell-subcaption">
-                                        <?php echo wp_kses_post( get_theme_mod( 'info_section_one_subtext', 'On all orders over 90$' ) ); ?>
-                                    </span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="main-slider-info-cell">
-                                <div class="cell-icon">
-                                    <?php
-                                    $icon = get_theme_mod( 'info_section_two_icon', 'fa fa-mobile-phone' );
-                                    if ( 'fa fa-mobile-phone' !== $icon ) {
-                                        $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_two_icon' );
-                                    }
-                                    ?>
-                                    <i class="<?php echo esc_attr( $icon ); ?>"></i>
-                                </div>
-                                <div class="cell-content">
+                            </li>
+                            <li class="col-sm-4 col-xs-12">
+                                <div class="main-slider-info-cell">
+                                    <div class="cell-icon">
+                                        <?php
+                                        $icon = get_theme_mod( 'info_section_two_icon', 'fa fa-mobile-phone' );
+                                        if ( 'fa fa-mobile-phone' !== $icon ) {
+                                            $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_two_icon' );
+                                        }
+                                        ?>
+                                        <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                    </div>
+                                    <div class="cell-content">
 							<span class="cell-caption">
 								<?php echo wp_kses_post( get_theme_mod( 'info_section_two_text', 'CALL US ANYTIME' ) ); ?>
 							</span> <span class="cell-subcaption">
 								<?php echo wp_kses_post( get_theme_mod( 'info_section_two_subtext', '+04786445953' ) ); ?>
 							</span>
-                                </div>
+                                    </div>
 
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="main-slider-info-cell">
-                                <div class="cell-icon">
-                                    <?php
-                                    $icon = get_theme_mod( 'info_section_three_icon', 'fa fa-map-marker' );
-                                    if ( 'fa fa-map-marker' !== $icon ) {
-                                        $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_three_icon' );
-                                    }
-                                    ?>
-                                    <i class="<?php echo esc_attr( $icon ); ?>"></i>
                                 </div>
-                                <div class="cell-content">
+                            </li>
+                            <li class="col-sm-4 col-xs-12">
+                                <div class="main-slider-info-cell">
+                                    <div class="cell-icon">
+                                        <?php
+                                        $icon = get_theme_mod( 'info_section_three_icon', 'fa fa-map-marker' );
+                                        if ( 'fa fa-map-marker' !== $icon ) {
+                                            $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_three_icon' );
+                                        }
+                                        ?>
+                                        <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                    </div>
+                                    <div class="cell-content">
 						<span class="cell-caption">
 							<?php echo wp_kses_post( get_theme_mod( 'info_section_three_text', 'OUR LOCATION' ) ); ?>
 						</span> <span class="cell-subcaption">
 							<?php echo wp_kses_post( get_theme_mod( 'info_section_three_subtext', '557-6308 Lacinia Road. NYC' ) ); ?>
 						</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-		</nav><!-- #site-navigation -->
-
-	</header><!-- #masthead -->
-	<?php
-	/**
-	 * Enable / Disable the main slider
-	 */
-	$show_on_front = get_option( 'show_on_front' );
-	if ( get_theme_mod( 'tyche_enable_main_slider', true ) && is_front_page() && 'posts' !== $show_on_front ) :
-		get_template_part( 'template-parts/main-slider' );
-	endif;
-	?>
+        </div>
+    </div>
 
 	<div class="site-content">
