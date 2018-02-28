@@ -125,10 +125,10 @@
 
 	</header><!-- #masthead -->
 
-    <div class="zen-banner-wrap">
+    <div class="zen-banner-wrap  <?php echo (!is_front_page()) ? 'child-page-menu' : '' ?>">
         <div class="container">
             <div class="clearfix">
-                <nav id="site-navigation" class="zen-navigation" role="navigation">
+                <nav id="site-navigation" class="zen-navigation  <?php echo (!is_front_page()) ? 'menu-toggle' : '' ?>" role="navigation">
                     <div class="navigation-wrap">
                         <p class="lbl  hidden-xs">
                             <i class="fa fa-bars"></i>
@@ -176,8 +176,81 @@
                             </div>
                         </div>
                     </div>
-
                 </nav><!-- #site-navigation -->
+                <?php
+                $show_on_front = get_option( 'show_on_front' );
+                if ( !is_front_page()) :
+                    ?>
+                    <div class="zen-custom-slider-bar">
+                        <div class="main-slider-bar hidden-xs">
+                            <ul class="main-slider-info">
+                                <li class="col-sm-4 col-xs-12">
+                                    <div class="main-slider-info-cell">
+                                        <div class="cell-icon">
+                                            <?php
+                                            $icon = get_theme_mod( 'info_section_one_icon', 'fa fa-automobile' );
+                                            if ( 'fa fa-automobile' !== $icon ) {
+                                                $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_one_icon' );
+                                            }
+                                            ?>
+                                            <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                        </div>
+                                        <div class="cell-content">
+                                        <span class="cell-caption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_one_text', 'FREE SHIPPING' ) ); ?>
+                                        </span> <span class="cell-subcaption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_one_subtext', 'On all orders over 90$' ) ); ?>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 col-xs-12">
+                                    <div class="main-slider-info-cell">
+                                        <div class="cell-icon">
+                                            <?php
+                                            $icon = get_theme_mod( 'info_section_two_icon', 'fa fa-mobile-phone' );
+                                            if ( 'fa fa-mobile-phone' !== $icon ) {
+                                                $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_two_icon' );
+                                            }
+                                            ?>
+                                            <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                        </div>
+                                        <div class="cell-content">
+                                        <span class="cell-caption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_two_text', 'CALL US ANYTIME' ) ); ?>
+                                        </span> <span class="cell-subcaption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_two_subtext', '+04786445953' ) ); ?>
+                                        </span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 col-xs-12">
+                                    <div class="main-slider-info-cell">
+                                        <div class="cell-icon">
+                                            <?php
+                                            $icon = get_theme_mod( 'info_section_three_icon', 'fa fa-map-marker' );
+                                            if ( 'fa fa-map-marker' !== $icon ) {
+                                                $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_three_icon' );
+                                            }
+                                            ?>
+                                            <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                        </div>
+                                        <div class="cell-content">
+                                        <span class="cell-caption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_three_text', 'OUR LOCATION' ) ); ?>
+                                        </span> <span class="cell-subcaption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_three_subtext', '557-6308 Lacinia Road. NYC' ) ); ?>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <?php
+                endif;
+                ?>
                 <?php
                 /**
                  * Enable / Disable the main slider
@@ -188,75 +261,83 @@
                 endif;
                 ?>
             </div>
-            <div class="main-slider">
-                <div class="main-slider-bar hidden-xs">
-                    <div class="container">
-                        <ul class="main-slider-info">
-                            <li class="col-sm-4 col-xs-12">
-                                <div class="main-slider-info-cell">
-                                    <div class="cell-icon">
-                                        <?php
-                                        $icon = get_theme_mod( 'info_section_one_icon', 'fa fa-automobile' );
-                                        if ( 'fa fa-automobile' !== $icon ) {
-                                            $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_one_icon' );
-                                        }
-                                        ?>
-                                        <i class="<?php echo esc_attr( $icon ); ?>"></i>
+            <?php
+            $show_on_front = get_option( 'show_on_front' );
+            if ( is_front_page() && 'posts' !== $show_on_front ) :
+                ?>
+                <div class="main-slider">
+                    <div class="main-slider-bar hidden-xs">
+                        <div class="container">
+                            <ul class="main-slider-info">
+                                <li class="col-sm-4 col-xs-12">
+                                    <div class="main-slider-info-cell">
+                                        <div class="cell-icon">
+                                            <?php
+                                            $icon = get_theme_mod( 'info_section_one_icon', 'fa fa-automobile' );
+                                            if ( 'fa fa-automobile' !== $icon ) {
+                                                $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_one_icon' );
+                                            }
+                                            ?>
+                                            <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                        </div>
+                                        <div class="cell-content">
+                                        <span class="cell-caption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_one_text', 'FREE SHIPPING' ) ); ?>
+                                        </span> <span class="cell-subcaption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_one_subtext', 'On all orders over 90$' ) ); ?>
+                                        </span>
+                                        </div>
                                     </div>
-                                    <div class="cell-content">
-							<span class="cell-caption">
-								<?php echo wp_kses_post( get_theme_mod( 'info_section_one_text', 'FREE SHIPPING' ) ); ?>
-							</span> <span class="cell-subcaption">
-								<?php echo wp_kses_post( get_theme_mod( 'info_section_one_subtext', 'On all orders over 90$' ) ); ?>
-							</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-sm-4 col-xs-12">
-                                <div class="main-slider-info-cell">
-                                    <div class="cell-icon">
-                                        <?php
-                                        $icon = get_theme_mod( 'info_section_two_icon', 'fa fa-mobile-phone' );
-                                        if ( 'fa fa-mobile-phone' !== $icon ) {
-                                            $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_two_icon' );
-                                        }
-                                        ?>
-                                        <i class="<?php echo esc_attr( $icon ); ?>"></i>
-                                    </div>
-                                    <div class="cell-content">
-							<span class="cell-caption">
-								<?php echo wp_kses_post( get_theme_mod( 'info_section_two_text', 'CALL US ANYTIME' ) ); ?>
-							</span> <span class="cell-subcaption">
-								<?php echo wp_kses_post( get_theme_mod( 'info_section_two_subtext', '+04786445953' ) ); ?>
-							</span>
-                                    </div>
+                                </li>
+                                <li class="col-sm-4 col-xs-12">
+                                    <div class="main-slider-info-cell">
+                                        <div class="cell-icon">
+                                            <?php
+                                            $icon = get_theme_mod( 'info_section_two_icon', 'fa fa-mobile-phone' );
+                                            if ( 'fa fa-mobile-phone' !== $icon ) {
+                                                $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_two_icon' );
+                                            }
+                                            ?>
+                                            <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                        </div>
+                                        <div class="cell-content">
+                                        <span class="cell-caption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_two_text', 'CALL US ANYTIME' ) ); ?>
+                                        </span> <span class="cell-subcaption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_two_subtext', '+04786445953' ) ); ?>
+                                        </span>
+                                        </div>
 
-                                </div>
-                            </li>
-                            <li class="col-sm-4 col-xs-12">
-                                <div class="main-slider-info-cell">
-                                    <div class="cell-icon">
-                                        <?php
-                                        $icon = get_theme_mod( 'info_section_three_icon', 'fa fa-map-marker' );
-                                        if ( 'fa fa-map-marker' !== $icon ) {
-                                            $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_three_icon' );
-                                        }
-                                        ?>
-                                        <i class="<?php echo esc_attr( $icon ); ?>"></i>
                                     </div>
-                                    <div class="cell-content">
-						<span class="cell-caption">
-							<?php echo wp_kses_post( get_theme_mod( 'info_section_three_text', 'OUR LOCATION' ) ); ?>
-						</span> <span class="cell-subcaption">
-							<?php echo wp_kses_post( get_theme_mod( 'info_section_three_subtext', '557-6308 Lacinia Road. NYC' ) ); ?>
-						</span>
+                                </li>
+                                <li class="col-sm-4 col-xs-12">
+                                    <div class="main-slider-info-cell">
+                                        <div class="cell-icon">
+                                            <?php
+                                            $icon = get_theme_mod( 'info_section_three_icon', 'fa fa-map-marker' );
+                                            if ( 'fa fa-map-marker' !== $icon ) {
+                                                $icon = 'dashicons dashicons-' . get_theme_mod( 'info_section_three_icon' );
+                                            }
+                                            ?>
+                                            <i class="<?php echo esc_attr( $icon ); ?>"></i>
+                                        </div>
+                                        <div class="cell-content">
+                                        <span class="cell-caption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_three_text', 'OUR LOCATION' ) ); ?>
+                                        </span> <span class="cell-subcaption">
+                                            <?php echo wp_kses_post( get_theme_mod( 'info_section_three_subtext', '557-6308 Lacinia Road. NYC' ) ); ?>
+                                        </span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <?php
+            endif;
+            ?>
+
         </div>
     </div>
 

@@ -190,6 +190,35 @@ $(function () {
     $('.zen-navigation .custom-menu > li > .dropdown-menu').each(function () {
         $(this).width($('.container').width() - 200 - 30);
     })
+
+
+    $(document).on('mouseover', '.menu-toggle', function () {
+        $(this).addClass('active-menu-toggle');
+    })
+    $(document).on('mouseleave', '.menu-toggle', function () {
+        $(this).removeClass('active-menu-toggle');
+    })
+
+    $(document).scroll(function() {
+        if($(window).width() > 767) {
+            if(!$('.zen-banner-wrap').hasClass('child-page-menu')) {
+                if ($(document).scrollTop() > 400) {
+
+                    $('.zen-navigation').addClass("fix-menu menu-toggle");
+                } else {
+                    $('.zen-navigation').removeClass("fix-menu menu-toggle");
+                }
+            } else {
+                if ($(document).scrollTop() > 300) {
+
+                    $('.zen-navigation').addClass("fix-menu");
+                } else {
+                    $('.zen-navigation').removeClass("fix-menu");
+                }
+            }
+        }
+    });
+
 });
 
 $(window).resize(function () {
